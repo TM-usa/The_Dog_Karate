@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-6-thread-4","id":1},{"content":"pool-6-thread-5","id":2},{"content":"pool-6-thread-2","id":3},{"content":"pool-6-thread-3","id":4},{"content":"pool-6-thread-1","id":5}];
+var items = [{"id":1,"group":1,"content":"features\/vote[1.1:16]","start":1679038777608,"end":1679038780583,"title":"features\/vote[1.1:16] 09:39:37.608-09:39:40.583 verify that I can Get a votes by  sub id"},{"id":2,"group":2,"content":"features\/vote[1.2:17]","start":1679038777639,"end":1679038780555,"title":"features\/vote[1.2:17] 09:39:37.639-09:39:40.555 verify that I can Get a votes by  sub id"},{"id":3,"group":3,"content":"features\/vote[2:21]","start":1679038777776,"end":1679038778722,"title":"features\/vote[2:21] 09:39:37.776-09:39:38.722 verify that I can Get a vote by  Id","className":"failed"},{"id":4,"group":4,"content":"features\/vote[3:31]","start":1679038778229,"end":1679038778229,"title":"features\/vote[3:31] 09:39:38.229-09:39:38.229 verify that I can post up"},{"id":5,"group":4,"content":"features\/vote[4:33]","start":1679038778230,"end":1679038778957,"title":"features\/vote[4:33] 09:39:38.230-09:39:38.957 create new up vote and get it by sub_id","className":"failed"},{"id":6,"group":5,"content":"features\/vote[5:61]","start":1679038778396,"end":1679038778398,"title":"features\/vote[5:61] 09:39:38.396-09:39:38.398 verify that I can post down","className":"failed"},{"id":7,"group":5,"content":"features\/vote[6:89]","start":1679038778401,"end":1679038779275,"title":"features\/vote[6:89] 09:39:38.401-09:39:39.275 verify that I can delete vote by id","className":"failed"},{"id":8,"group":5,"content":"features\/breed[1:8]","start":1679038776691,"end":1679038777515,"title":"features\/breed[1:8] 09:39:36.691-09:39:37.515 verify that I can Get breeds by limit"},{"id":9,"group":3,"content":"features\/breed[2:16]","start":1679038776689,"end":1679038777773,"title":"features\/breed[2:16] 09:39:36.689-09:39:37.773 verify that I can Get breeds by id"},{"id":10,"group":4,"content":"features\/cats[1:8]","start":1679038776689,"end":1679038777489,"title":"features\/cats[1:8] 09:39:36.689-09:39:37.489 test that I can Get  categories"},{"id":11,"group":1,"content":"features\/favs[1:8]","start":1679038776689,"end":1679038777606,"title":"features\/favs[1:8] 09:39:36.689-09:39:37.606 verify that I can Get a favorite by favourite Id"},{"id":12,"group":2,"content":"features\/favs[2:18]","start":1679038776691,"end":1679038777637,"title":"features\/favs[2:18] 09:39:36.691-09:39:37.637 verify that i can save a favorite with image id"},{"id":13,"group":4,"content":"features\/favs[3:28]","start":1679038777491,"end":1679038778227,"title":"features\/favs[3:28] 09:39:37.491-09:39:38.227 verify that i can create a favorite with image id and Sub id successfully","className":"failed"},{"id":14,"group":5,"content":"features\/favs[4:46]","start":1679038777518,"end":1679038778392,"title":"features\/favs[4:46] 09:39:37.518-09:39:38.392 verify that I can delete favorite by ID"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

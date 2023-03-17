@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4},{"content":"pool-1-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"votes\/vote\/vote[1.1:16]","start":1679038397128,"end":1679038400922,"title":"votes\/vote\/vote[1.1:16] 09:33:17.128-09:33:20.922 verify that I can Get a votes by  sub id"},{"id":2,"group":2,"content":"votes\/vote\/vote[1.2:17]","start":1679038397128,"end":1679038400787,"title":"votes\/vote\/vote[1.2:17] 09:33:17.128-09:33:20.787 verify that I can Get a votes by  sub id"},{"id":3,"group":3,"content":"votes\/vote\/vote[2:21]","start":1679038397128,"end":1679038398940,"title":"votes\/vote\/vote[2:21] 09:33:17.128-09:33:18.940 verify that I can Get a vote by  Id","className":"failed"},{"id":4,"group":4,"content":"votes\/vote\/vote[3:31]","start":1679038397128,"end":1679038397197,"title":"votes\/vote\/vote[3:31] 09:33:17.128-09:33:17.197 verify that I can post up"},{"id":5,"group":5,"content":"votes\/vote\/vote[4:33]","start":1679038397128,"end":1679038398538,"title":"votes\/vote\/vote[4:33] 09:33:17.128-09:33:18.538 create new up vote and get it by sub_id","className":"failed"},{"id":6,"group":4,"content":"votes\/vote\/vote[5:61]","start":1679038397204,"end":1679038397253,"title":"votes\/vote\/vote[5:61] 09:33:17.204-09:33:17.253 verify that I can post down","className":"failed"},{"id":7,"group":4,"content":"votes\/vote\/vote[6:89]","start":1679038397258,"end":1679038398720,"title":"votes\/vote\/vote[6:89] 09:33:17.258-09:33:18.720 verify that I can delete vote by id","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

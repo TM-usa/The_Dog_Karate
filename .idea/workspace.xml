@@ -2,17 +2,168 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5538ab66-64ee-4ad2-9db7-7bdf6888d63f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_8_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_20_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_owasp_java_html_sanitizer_owasp_java_html_sanitizer_20160924_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_lingala_zip4j_zip4j_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_masterthought_cucumber_reporting_3_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_velocity_velocity_1_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_utils_3_0_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jsoup_jsoup_1_10_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__velocity_tools_velocity_tools_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/DogTestsRunner/TestsRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/favourites/favs/favs.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/favourites/favs/favs.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/votes/VotesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/votes/VotesTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/karate-reports/favourites.favs.favs.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/favourites.favs.favs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/karate-reports/favourites.favs.favs.karate-json.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/favourites.favs.favs.karate-json.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-summary-json.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/karate-summary-json.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/karate-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/karate-tags.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-timeline.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/karate-timeline.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/karate.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/favourites/favs/favs.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/favourites/favs/favs.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/The_Dog_Karate.iml" beforeDir="false" afterPath="$PROJECT_DIR$/The_Dog_Karate.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/breeds/BreedsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/breeds/breed/breed.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/breed.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/breeds/breed/breedRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/categories/CategoriesTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/categories/cats/cats.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/cats.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/categories/cats/catsRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/favourites/FavouritesTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/favourites/favs/FavsRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/favourites/favs/favs.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/favs.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/votes/VotesTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/votes/vote/vote.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/vote.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/votes/vote/voteRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/breeds.breed.breed.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/breeds.breed.breed.karate-json.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/categories.cats.cats.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/categories.cats.cats.karate-json.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/favourites.favs.favs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/favourites.favs.favs.karate-json.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-progress-json.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-summary-json.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-tags.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-timeline.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/res/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/res/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/res/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/res/jquery.tablesorter.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/res/karate-report.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/res/karate-report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/votes.vote.vote.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/votes.vote.vote.karate-json.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679011160855/examples.users.users.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679011160855/examples.users.users.karate-json.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679011160855/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679011160855/karate-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679011160855/karate-logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679011160855/karate-summary-json.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679011160855/karate-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679011160855/karate-tags.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679011160855/karate-timeline.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679011160855/res/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679011160855/res/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679011160855/res/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679011160855/res/jquery.tablesorter.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679011160855/res/karate-report.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679011160855/res/karate-report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679011179152/examples.users.users.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679011179152/examples.users.users.karate-json.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679011179152/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679011179152/karate-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679011179152/karate-logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679011179152/karate-progress-json.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679011179152/karate-summary-json.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679011179152/karate-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679011179152/karate-tags.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679011179152/karate-timeline.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679011179152/res/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679011179152/res/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679011179152/res/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679011179152/res/jquery.tablesorter.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679011179152/res/karate-report.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679011179152/res/karate-report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679012609487/examples.users.users.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679012609487/examples.users.users.karate-json.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679012609487/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679012609487/favourites.favs.favs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679012609487/favourites.favs.favs.karate-json.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679012609487/karate-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679012609487/karate-logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679012609487/karate-progress-json.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679012609487/karate-summary-json.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679012609487/karate-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679012609487/karate-tags.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679012609487/karate-timeline.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679012609487/res/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679012609487/res/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679012609487/res/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679012609487/res/jquery.tablesorter.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679012609487/res/karate-report.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679012609487/res/karate-report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679014051056/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679014051056/favourites.favs.favs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679014051056/favourites.favs.favs.karate-json.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679014051056/karate-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679014051056/karate-logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679014051056/karate-progress-json.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679014051056/karate-summary-json.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679014051056/karate-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679014051056/karate-tags.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679014051056/karate-timeline.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679014051056/res/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679014051056/res/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679014051056/res/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679014051056/res/jquery.tablesorter.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679014051056/res/karate-report.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679014051056/res/karate-report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679017177310/categories.cats.cats.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679017177310/categories.cats.cats.karate-json.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679017177310/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679017177310/favourites.favs.favs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679017177310/favourites.favs.favs.karate-json.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679017177310/karate-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679017177310/karate-logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679017177310/karate-progress-json.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679017177310/karate-summary-json.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679017177310/karate-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679017177310/karate-tags.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679017177310/karate-timeline.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679017177310/res/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679017177310/res/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679017177310/res/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679017177310/res/jquery.tablesorter.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679017177310/res/karate-report.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports_1679017177310/res/karate-report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-categories.CategoriesTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-favourites.FavouritesTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/categories.CategoriesTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/favourites.FavouritesTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/The_Dog_Karate.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/breeds/BreedsTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/breeds/breed/breed.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/breeds/breed/breedRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/categories/CategoriesTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/categories/cats/cats.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/categories/cats/catsRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/examples/users/users.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/favourites/FavouritesTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/favourites/favs/FavsRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/favourites/favs/favs.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/karate-config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/logback-test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/votes/VotesTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/votes/vote/vote.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/votes/vote/voteRunner.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +173,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Substep Feature" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -45,83 +196,88 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Thapelo\Documents\my-karate-project\TestingDocsKarateDemo\src\test\java\features" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="favourites.favs" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.breedRunner">
-    <configuration name="FavsRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TestsRunner">
+    <configuration name="TestsRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="The_Dog_Karate" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="favourites.favs.*" />
+          <option name="PATTERN" value="DogTestsRunner.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="favourites.favs" />
-      <option name="MAIN_CLASS_NAME" value="favourites.favs.FavsRunner" />
+      <option name="PACKAGE_NAME" value="DogTestsRunner" />
+      <option name="MAIN_CLASS_NAME" value="DogTestsRunner.TestsRunner" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="breedRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestsRunner.testBreeds" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="The_Dog_Karate" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="breeds.breed.*" />
+          <option name="PATTERN" value="DogTestsRunner.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="breeds.breed" />
-      <option name="MAIN_CLASS_NAME" value="breeds.breed.breedRunner" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="breedRunner.testCats" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="The_Dog_Karate" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="breeds.breed.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="breeds.breed" />
-      <option name="MAIN_CLASS_NAME" value="breeds.breed.breedRunner" />
-      <option name="METHOD_NAME" value="testCats" />
+      <option name="PACKAGE_NAME" value="DogTestsRunner" />
+      <option name="MAIN_CLASS_NAME" value="DogTestsRunner.TestsRunner" />
+      <option name="METHOD_NAME" value="testBreeds" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="voteRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestsRunner.testCategories" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="The_Dog_Karate" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="votes.vote.*" />
+          <option name="PATTERN" value="DogTestsRunner.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="votes.vote" />
-      <option name="MAIN_CLASS_NAME" value="votes.vote.voteRunner" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="DogTestsRunner" />
+      <option name="MAIN_CLASS_NAME" value="DogTestsRunner.TestsRunner" />
+      <option name="METHOD_NAME" value="testCategories" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="voteRunner.testvote" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestsRunner.testFavourites" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="The_Dog_Karate" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="votes.vote.*" />
+          <option name="PATTERN" value="DogTestsRunner.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="votes.vote" />
-      <option name="MAIN_CLASS_NAME" value="votes.vote.voteRunner" />
-      <option name="METHOD_NAME" value="testvote" />
+      <option name="PACKAGE_NAME" value="DogTestsRunner" />
+      <option name="MAIN_CLASS_NAME" value="DogTestsRunner.TestsRunner" />
+      <option name="METHOD_NAME" value="testFavourites" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestsRunner.testVotes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="The_Dog_Karate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DogTestsRunner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="DogTestsRunner" />
+      <option name="MAIN_CLASS_NAME" value="DogTestsRunner.TestsRunner" />
+      <option name="METHOD_NAME" value="testVotes" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -176,11 +332,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.breedRunner" />
-        <item itemvalue="JUnit.breedRunner.testCats" />
-        <item itemvalue="JUnit.FavsRunner" />
-        <item itemvalue="JUnit.voteRunner" />
-        <item itemvalue="JUnit.voteRunner.testvote" />
+        <item itemvalue="JUnit.TestsRunner" />
+        <item itemvalue="JUnit.TestsRunner.testFavourites" />
+        <item itemvalue="JUnit.TestsRunner.testCategories" />
+        <item itemvalue="JUnit.TestsRunner.testBreeds" />
+        <item itemvalue="JUnit.TestsRunner.testVotes" />
       </list>
     </recent_temporary>
   </component>
@@ -206,36 +362,25 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="330" y="3" key="CommitChangelistDialog2/0.0.1536.816@0.0.1536.816" timestamp="1679017377049" />
-    <state width="1493" height="208" key="GridCell.Tab.0.bottom" timestamp="1679036420532">
+    <state width="1493" height="208" key="GridCell.Tab.0.bottom" timestamp="1679038763881">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1679036420532" />
-    <state width="1493" height="208" key="GridCell.Tab.0.center" timestamp="1679036420532">
+    <state width="1493" height="208" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1679038763881" />
+    <state width="1493" height="208" key="GridCell.Tab.0.center" timestamp="1679038763881">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1679036420532" />
-    <state width="1493" height="208" key="GridCell.Tab.0.left" timestamp="1679036420532">
+    <state width="1493" height="208" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1679038763881" />
+    <state width="1493" height="208" key="GridCell.Tab.0.left" timestamp="1679038763881">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1679036420532" />
-    <state width="1493" height="208" key="GridCell.Tab.0.right" timestamp="1679036420532">
+    <state width="1493" height="208" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1679038763881" />
+    <state width="1493" height="208" key="GridCell.Tab.0.right" timestamp="1679038763881">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1679036420532" />
-    <state x="299" y="63" key="Maven.ArtifactSearchDialog" timestamp="1679013541490">
+    <state width="1493" height="208" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1679038763881" />
+    <state x="299" y="63" key="Maven.ArtifactSearchDialog" timestamp="1679037202545">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="299" y="63" key="Maven.ArtifactSearchDialog/0.0.1536.816@0.0.1536.816" timestamp="1679013541490" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/votes/vote/voteRunner.java</url>
-          <line>4</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="299" y="63" key="Maven.ArtifactSearchDialog/0.0.1536.816@0.0.1536.816" timestamp="1679037202545" />
   </component>
 </project>

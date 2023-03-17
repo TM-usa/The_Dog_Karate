@@ -1,0 +1,2702 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Feature: features/vote.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>demo</td>
+            <td>17 Mar 2023, 09:39</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">features/vote.feature</td>
+                    <td      class="passed"    >40</td>
+          <td      class="failed"    >4</td>
+          <td     class="skipped"   >19</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">63</td>
+
+          <td  class="passed"    >3</td>
+          <td  class="failed"    >4</td>
+          <td class="total">7</td>
+
+          <td class="duration" data-value="8288222004">8s 288ms</td>
+          <td class="failed">Failed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+        
+<div class="tags indention">
+  </div>
+
+        
+<div class="brief failed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">features/vote.feature</span>
+  
+
+  </div>
+
+        <div class="description indention">Getting, posting and deleting votes</div>
+
+        <div class="elements inner-level">
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">000ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url 'https://api.thedogapi.com/v1'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>09:39:41.879 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header x-api-key = 'live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header 'Content-Type' = 'application/json'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">2s 810ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">verify that I can Get a votes by  sub id</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention">*param sub_Id &lt;sub_id&gt;</div>
+
+  <div id="element-4" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-5" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'votes'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">2s 810ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>09:39:41.880 request:
+1 &gt; GET https://api.thedogapi.com/v1/votes
+1 &gt; x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 &gt; 'Content-Type': application/json
+1 &gt; Host: api.thedogapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+09:39:44.690 response time in milliseconds: 2810
+1 &lt; 200
+1 &lt; x-dns-prefetch-control: off
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; strict-transport-security: max-age=15552000; includeSubDomains
+1 &lt; x-download-options: noopen
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-xss-protection: 1; mode=block
+1 &lt; vary: Origin
+1 &lt; retry-after-seconds: 45.151
+1 &lt; ratelimit-limit: 120
+1 &lt; ratelimit-remaining: 87
+1 &lt; ratelimit-consumed: 33
+1 &lt; ratelimit-reset: 2023-03-17T07:40:25.637Z
+1 &lt; content-type: application/json
+1 &lt; pagination-count: 28
+1 &lt; pagination-page: 0
+1 &lt; pagination-limit: 100
+1 &lt; access-control-expose-headers: Pagination-Count, Pagination-Page, Pagination-Limit
+1 &lt; x-response-time: 2065ms
+1 &lt; X-Cloud-Trace-Context: 615577d3347c77dad767a69b532e89a0
+1 &lt; Date: Fri, 17 Mar 2023 07:39:42 GMT
+1 &lt; Server: Google Frontend
+1 &lt; Content-Length: 3905
+[{&quot;id&quot;:145520,&quot;image_id&quot;:&quot;GAmy2bg8G&quot;,&quot;sub_id&quot;:&quot;my-user-1232&quot;,&quot;created_at&quot;:&quot;2023-03-14T09:10:45.000Z&quot;,&quot;value&quot;:-1,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}},{&quot;id&quot;:146732,&quot;image_id&quot;:&quot;GAmy2bg8G&quot;,&quot;sub_id&quot;:&quot;my-user-1232&quot;,&quot;created_at&quot;:&quot;2023-03-16T08:39:08.000Z&quot;,&quot;value&quot;:-1,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}},{&quot;id&quot;:146733,&quot;image_id&quot;:&quot;asf2&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2023-03-16T08:44:05.000Z&quot;,&quot;value&quot;:0,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}},{&quot;id&quot;:146734,&quot;image_id&quot;:&quot;dfgtgh&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2023-03-16T08:49:36.000Z&quot;,&quot;value&quot;:0,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}},{&quot;id&quot;:146747,&quot;image_id&quot;:&quot;dfgtgh&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2023-03-16T08:55:17.000Z&quot;,&quot;value&quot;:0,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}},{&quot;id&quot;:146748,&quot;image_id&quot;:&quot;dfgtgh&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2023-03-16T08:56:41.000Z&quot;,&quot;value&quot;:0,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}},{&quot;id&quot;:146749,&quot;image_id&quot;:&quot;dfgtgh&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2023-03-16T08:58:04.000Z&quot;,&quot;value&quot;:0,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}},{&quot;id&quot;:146750,&quot;image_id&quot;:&quot;dfgtgh&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2023-03-16T08:58:32.000Z&quot;,&quot;value&quot;:0,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}},{&quot;id&quot;:146751,&quot;image_id&quot;:&quot;dfgtgh&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2023-03-16T09:01:56.000Z&quot;,&quot;value&quot;:0,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}},{&quot;id&quot;:146752,&quot;image_id&quot;:&quot;dfgtgh&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2023-03-16T09:04:00.000Z&quot;,&quot;value&quot;:0,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}},{&quot;id&quot;:146753,&quot;image_id&quot;:&quot;dfgtgh&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2023-03-16T09:05:03.000Z&quot;,&quot;value&quot;:0,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}},{&quot;id&quot;:146754,&quot;image_id&quot;:&quot;dfgtgh&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2023-03-16T09:07:31.000Z&quot;,&quot;value&quot;:0,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}},{&quot;id&quot;:146755,&quot;image_id&quot;:&quot;dfgtgh&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2023-03-16T09:12:05.000Z&quot;,&quot;value&quot;:0,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}},{&quot;id&quot;:146756,&quot;image_id&quot;:&quot;dfgtgh&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2023-03-16T09:19:35.000Z&quot;,&quot;value&quot;:0,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}},{&quot;id&quot;:146757,&quot;image_id&quot;:&quot;dfgtgh&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2023-03-16T10:25:08.000Z&quot;,&quot;value&quot;:0,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}},{&quot;id&quot;:146758,&quot;image_id&quot;:&quot;dfgtgh&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2023-03-16T10:49:19.000Z&quot;,&quot;value&quot;:0,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}},{&quot;id&quot;:146765,&quot;image_id&quot;:&quot;dfgtgh&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2023-03-16T12:01:20.000Z&quot;,&quot;value&quot;:0,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}},{&quot;id&quot;:146770,&quot;image_id&quot;:&quot;dfgtgh&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2023-03-16T12:56:57.000Z&quot;,&quot;value&quot;:0,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}},{&quot;id&quot;:146771,&quot;image_id&quot;:&quot;dfgtgh&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2023-03-16T12:59:27.000Z&quot;,&quot;value&quot;:0,&quot;country_code&quot;:&quot;US&quot;,&quot;image&quot;:{}},{&quot;id&quot;:146774,&quot;image_id&quot;:&quot;dfgtgh&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2023-03-16T13:09:24.000Z&quot;,&quot;value&quot;:0,&quot;country_code&quot;:&quot;US&quot;,&quot;image&quot;:{}},{&quot;id&quot;:146822,&quot;image_id&quot;:&quot;jhfbvuufb&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2023-03-16T13:30:14.000Z&quot;,&quot;value&quot;:1,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}},{&quot;id&quot;:146823,&quot;image_id&quot;:&quot;jhfbvuufb&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2023-03-16T13:31:11.000Z&quot;,&quot;value&quot;:1,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}},{&quot;id&quot;:146827,&quot;image_id&quot;:&quot;jhfbvuufb&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2023-03-16T13:38:39.000Z&quot;,&quot;value&quot;:1,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}},{&quot;id&quot;:146837,&quot;image_id&quot;:&quot;asf2&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2023-03-16T16:13:55.000Z&quot;,&quot;value&quot;:1,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}},{&quot;id&quot;:146838,&quot;image_id&quot;:&quot;jhfbvuufb&quot;,&quot;sub_id&quot;:&quot;my-userrr-5534&quot;,&quot;created_at&quot;:&quot;2023-03-16T16:14:28.000Z&quot;,&quot;value&quot;:1,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}},{&quot;id&quot;:147241,&quot;image_id&quot;:&quot;asf2&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2023-03-17T02:32:59.000Z&quot;,&quot;value&quot;:0,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}},{&quot;id&quot;:147246,&quot;image_id&quot;:&quot;asf2&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2023-03-17T06:44:36.000Z&quot;,&quot;value&quot;:1,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}},{&quot;id&quot;:147251,&quot;image_id&quot;:&quot;asf2&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2023-03-17T06:47:21.000Z&quot;,&quot;value&quot;:0,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}}]
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">000ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-7" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-8" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url 'https://api.thedogapi.com/v1'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>09:39:41.898 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header x-api-key = 'live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header 'Content-Type' = 'application/json'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">2s 946ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-10">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">verify that I can Get a votes by  sub id</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention">*param sub_Id &lt;sub_id&gt;</div>
+
+  <div id="element-10" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-11" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'votes'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">2s 946ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>09:39:41.900 request:
+1 &gt; GET https://api.thedogapi.com/v1/votes
+1 &gt; x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 &gt; 'Content-Type': application/json
+1 &gt; Host: api.thedogapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+09:39:44.845 response time in milliseconds: 2944
+1 &lt; 200
+1 &lt; x-dns-prefetch-control: off
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; strict-transport-security: max-age=15552000; includeSubDomains
+1 &lt; x-download-options: noopen
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-xss-protection: 1; mode=block
+1 &lt; vary: Origin
+1 &lt; retry-after-seconds: 45.095
+1 &lt; ratelimit-limit: 120
+1 &lt; ratelimit-remaining: 86
+1 &lt; ratelimit-consumed: 34
+1 &lt; ratelimit-reset: 2023-03-17T07:40:25.637Z
+1 &lt; content-type: application/json
+1 &lt; pagination-count: 28
+1 &lt; pagination-page: 0
+1 &lt; pagination-limit: 100
+1 &lt; access-control-expose-headers: Pagination-Count, Pagination-Page, Pagination-Limit
+1 &lt; x-response-time: 2149ms
+1 &lt; X-Cloud-Trace-Context: 6c2aebfc673f80336dbed2e9c988b7f1
+1 &lt; Date: Fri, 17 Mar 2023 07:39:42 GMT
+1 &lt; Server: Google Frontend
+1 &lt; Content-Length: 3905
+[{&quot;id&quot;:145520,&quot;image_id&quot;:&quot;GAmy2bg8G&quot;,&quot;sub_id&quot;:&quot;my-user-1232&quot;,&quot;created_at&quot;:&quot;2023-03-14T09:10:45.000Z&quot;,&quot;value&quot;:-1,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}},{&quot;id&quot;:146732,&quot;image_id&quot;:&quot;GAmy2bg8G&quot;,&quot;sub_id&quot;:&quot;my-user-1232&quot;,&quot;created_at&quot;:&quot;2023-03-16T08:39:08.000Z&quot;,&quot;value&quot;:-1,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}},{&quot;id&quot;:146733,&quot;image_id&quot;:&quot;asf2&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2023-03-16T08:44:05.000Z&quot;,&quot;value&quot;:0,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}},{&quot;id&quot;:146734,&quot;image_id&quot;:&quot;dfgtgh&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2023-03-16T08:49:36.000Z&quot;,&quot;value&quot;:0,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}},{&quot;id&quot;:146747,&quot;image_id&quot;:&quot;dfgtgh&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2023-03-16T08:55:17.000Z&quot;,&quot;value&quot;:0,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}},{&quot;id&quot;:146748,&quot;image_id&quot;:&quot;dfgtgh&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2023-03-16T08:56:41.000Z&quot;,&quot;value&quot;:0,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}},{&quot;id&quot;:146749,&quot;image_id&quot;:&quot;dfgtgh&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2023-03-16T08:58:04.000Z&quot;,&quot;value&quot;:0,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}},{&quot;id&quot;:146750,&quot;image_id&quot;:&quot;dfgtgh&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2023-03-16T08:58:32.000Z&quot;,&quot;value&quot;:0,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}},{&quot;id&quot;:146751,&quot;image_id&quot;:&quot;dfgtgh&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2023-03-16T09:01:56.000Z&quot;,&quot;value&quot;:0,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}},{&quot;id&quot;:146752,&quot;image_id&quot;:&quot;dfgtgh&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2023-03-16T09:04:00.000Z&quot;,&quot;value&quot;:0,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}},{&quot;id&quot;:146753,&quot;image_id&quot;:&quot;dfgtgh&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2023-03-16T09:05:03.000Z&quot;,&quot;value&quot;:0,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}},{&quot;id&quot;:146754,&quot;image_id&quot;:&quot;dfgtgh&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2023-03-16T09:07:31.000Z&quot;,&quot;value&quot;:0,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}},{&quot;id&quot;:146755,&quot;image_id&quot;:&quot;dfgtgh&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2023-03-16T09:12:05.000Z&quot;,&quot;value&quot;:0,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}},{&quot;id&quot;:146756,&quot;image_id&quot;:&quot;dfgtgh&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2023-03-16T09:19:35.000Z&quot;,&quot;value&quot;:0,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}},{&quot;id&quot;:146757,&quot;image_id&quot;:&quot;dfgtgh&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2023-03-16T10:25:08.000Z&quot;,&quot;value&quot;:0,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}},{&quot;id&quot;:146758,&quot;image_id&quot;:&quot;dfgtgh&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2023-03-16T10:49:19.000Z&quot;,&quot;value&quot;:0,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}},{&quot;id&quot;:146765,&quot;image_id&quot;:&quot;dfgtgh&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2023-03-16T12:01:20.000Z&quot;,&quot;value&quot;:0,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}},{&quot;id&quot;:146770,&quot;image_id&quot;:&quot;dfgtgh&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2023-03-16T12:56:57.000Z&quot;,&quot;value&quot;:0,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}},{&quot;id&quot;:146771,&quot;image_id&quot;:&quot;dfgtgh&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2023-03-16T12:59:27.000Z&quot;,&quot;value&quot;:0,&quot;country_code&quot;:&quot;US&quot;,&quot;image&quot;:{}},{&quot;id&quot;:146774,&quot;image_id&quot;:&quot;dfgtgh&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2023-03-16T13:09:24.000Z&quot;,&quot;value&quot;:0,&quot;country_code&quot;:&quot;US&quot;,&quot;image&quot;:{}},{&quot;id&quot;:146822,&quot;image_id&quot;:&quot;jhfbvuufb&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2023-03-16T13:30:14.000Z&quot;,&quot;value&quot;:1,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}},{&quot;id&quot;:146823,&quot;image_id&quot;:&quot;jhfbvuufb&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2023-03-16T13:31:11.000Z&quot;,&quot;value&quot;:1,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}},{&quot;id&quot;:146827,&quot;image_id&quot;:&quot;jhfbvuufb&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2023-03-16T13:38:39.000Z&quot;,&quot;value&quot;:1,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}},{&quot;id&quot;:146837,&quot;image_id&quot;:&quot;asf2&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2023-03-16T16:13:55.000Z&quot;,&quot;value&quot;:1,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}},{&quot;id&quot;:146838,&quot;image_id&quot;:&quot;jhfbvuufb&quot;,&quot;sub_id&quot;:&quot;my-userrr-5534&quot;,&quot;created_at&quot;:&quot;2023-03-16T16:14:28.000Z&quot;,&quot;value&quot;:1,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}},{&quot;id&quot;:147241,&quot;image_id&quot;:&quot;asf2&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2023-03-17T02:32:59.000Z&quot;,&quot;value&quot;:0,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}},{&quot;id&quot;:147246,&quot;image_id&quot;:&quot;asf2&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2023-03-17T06:44:36.000Z&quot;,&quot;value&quot;:1,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}},{&quot;id&quot;:147251,&quot;image_id&quot;:&quot;asf2&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2023-03-17T06:47:21.000Z&quot;,&quot;value&quot;:0,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}}]
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">000ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-13" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-14">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-14" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url 'https://api.thedogapi.com/v1'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details">
+        <pre>09:39:41.991 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header x-api-key = 'live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header 'Content-Type' = 'application/json'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">917ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-16">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">verify that I can Get a vote by  Id</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-16" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-17">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-17" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'votes/145520'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">915ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-18">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-18" class="collapse collapsable-details">
+        <pre>09:39:41.993 request:
+1 &gt; GET https://api.thedogapi.com/v1/votes/145520
+1 &gt; x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 &gt; 'Content-Type': application/json
+1 &gt; Host: api.thedogapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+09:39:42.909 response time in milliseconds: 915
+1 &lt; 200
+1 &lt; x-dns-prefetch-control: off
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; strict-transport-security: max-age=15552000; includeSubDomains
+1 &lt; x-download-options: noopen
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-xss-protection: 1; mode=block
+1 &lt; vary: Origin
+1 &lt; retry-after-seconds: 45.05
+1 &lt; ratelimit-limit: 120
+1 &lt; ratelimit-remaining: 85
+1 &lt; ratelimit-consumed: 35
+1 &lt; ratelimit-reset: 2023-03-17T07:40:25.637Z
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; x-response-time: 178ms
+1 &lt; X-Cloud-Trace-Context: 4332ee75b413bb2371d1dc1110c11b9c
+1 &lt; Date: Fri, 17 Mar 2023 07:39:40 GMT
+1 &lt; Server: Google Frontend
+1 &lt; Content-Length: 161
+{&quot;id&quot;:145520,&quot;user_id&quot;:&quot;55fxzy&quot;,&quot;image_id&quot;:&quot;GAmy2bg8G&quot;,&quot;sub_id&quot;:&quot;my-user-1232&quot;,&quot;created_at&quot;:&quot;2023-03-14T09:10:45.000Z&quot;,&quot;value&quot;:-1,&quot;country_code&quot;:&quot;ZA&quot;,&quot;image&quot;:{}}
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.name == 'African Hunting Dog'</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-19">
+          <a>match failed: EQUALS</a>
+      </div>
+      <div id="msg-19" class="collapse collapsable-details  in ">
+        <pre>match failed: EQUALS
+  $ | actual path does not exist (STRING:STRING)
+  '#notpresent'
+  'African Hunting Dog'
+
+classpath:features/vote.feature:25</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-20">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-20" class="collapse collapsable-details">
+        <pre>09:39:42.910 classpath:features/vote.feature:25
+And match response.name == 'African Hunting Dog'
+match failed: EQUALS
+  $ | actual path does not exist (STRING:STRING)
+  '#notpresent'
+  'African Hunting Dog'
+
+classpath:features/vote.feature:25
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.id == 145520</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">eval karate.log('Response:', response)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">000ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-21">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-21" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-22">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-22" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url 'https://api.thedogapi.com/v1'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-23">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-23" class="collapse collapsable-details">
+        <pre>09:39:42.553 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header x-api-key = 'live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header 'Content-Type' = 'application/json'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">000ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-24">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">verify that I can post up</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-24" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-25">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-25" class="inner-level collapse collapsable-details ">
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">000ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-26">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-26" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-27">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-27" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url 'https://api.thedogapi.com/v1'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-28">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-28" class="collapse collapsable-details">
+        <pre>09:39:42.555 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header x-api-key = 'live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header 'Content-Type' = 'application/json'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">757ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-29">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">create new up vote and get it by sub_id</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-29" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-30">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-30" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def jsonVoteUp =</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-31">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-31" class="collapse collapsable-details">
+        <pre>{
+	&quot;image_id&quot;:&quot;asfiehhyg2&quot;,
+	&quot;sub_id&quot;: &quot;my-the-user-1234&quot;,
+	&quot;value&quot;:1
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'favorites'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">request  jsonVoteUp</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Accept = 'application/json'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+  
+  <span class="lead-duration duration">757ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-32">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-32" class="collapse collapsable-details">
+        <pre>09:39:42.556 request:
+1 &gt; POST https://api.thedogapi.com/v1/favorites
+1 &gt; x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 &gt; 'Content-Type': application/json
+1 &gt; Accept: application/json
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 63
+1 &gt; Host: api.thedogapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;image_id&quot;:&quot;asfiehhyg2&quot;,&quot;sub_id&quot;:&quot;my-the-user-1234&quot;,&quot;value&quot;:1}
+
+09:39:43.312 response time in milliseconds: 755
+1 &lt; 404
+1 &lt; x-dns-prefetch-control: off
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; strict-transport-security: max-age=15552000; includeSubDomains
+1 &lt; x-download-options: noopen
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-xss-protection: 1; mode=block
+1 &lt; vary: Origin
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; x-response-time: 1ms
+1 &lt; X-Cloud-Trace-Context: 9cafa76c219d698fe19cfabf79ae27da
+1 &lt; Date: Fri, 17 Mar 2023 07:39:41 GMT
+1 &lt; Server: Google Frontend
+1 &lt; Content-Length: 105
+{&quot;message&quot;:&quot;404 - please consult the documentation for correct url to call. https://docs.thedogapi.com/&quot;}
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 201</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-33">
+          <a>status code was: 404, expected: 201, response time in milliseconds: 755, url: https://api.thedogapi.com/v1/favorites, response: </a>
+      </div>
+      <div id="msg-33" class="collapse collapsable-details  in ">
+        <pre>status code was: 404, expected: 201, response time in milliseconds: 755, url: https://api.thedogapi.com/v1/favorites, response: 
+{&quot;message&quot;:&quot;404 - please consult the documentation for correct url to call. https://docs.thedogapi.com/&quot;}
+classpath:features/vote.feature:48</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-34">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-34" class="collapse collapsable-details">
+        <pre>09:39:43.312 classpath:features/vote.feature:48
+Then status 201
+status code was: 404, expected: 201, response time in milliseconds: 755, url: https://api.thedogapi.com/v1/favorites, response: 
+{&quot;message&quot;:&quot;404 - please consult the documentation for correct url to call. https://docs.thedogapi.com/&quot;}
+classpath:features/vote.feature:48
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def sub_id = response.sub_id</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'created sub_id: ', sub_id</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Given</span>
+  <span class="name">path sub_id</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">match response contains jsonVoteUp&nbsp;</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">000ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-35">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-35" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-36">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-36" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url 'https://api.thedogapi.com/v1'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-37">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-37" class="collapse collapsable-details">
+        <pre>09:39:42.638 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header x-api-key = 'live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header 'Content-Type' = 'application/json'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">002ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-38">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">verify that I can post down</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-38" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-39">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-39" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def jsonVoteDown =</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-40">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-40" class="collapse collapsable-details">
+        <pre>{
+	&quot;image_id&quot;:&quot;asghf2&quot;,
+	&quot;sub_id&quot;: &quot;my-user-123445&quot;,
+	&quot;value&quot;:0
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'favorites'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">When</span>
+  <span class="name">request  jsonVoteUp</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-41">
+          <a>js failed:</a>
+      </div>
+      <div id="msg-41" class="collapse collapsable-details  in ">
+        <pre>js failed:
+&gt;&gt;&gt;&gt;
+01: jsonVoteUp
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;jsonVoteUp&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/vote.feature:74</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-42">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-42" class="collapse collapsable-details">
+        <pre>09:39:42.641 classpath:features/vote.feature:74
+When request  jsonVoteUp
+js failed:
+&gt;&gt;&gt;&gt;
+01: jsonVoteUp
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;jsonVoteUp&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/vote.feature:74
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">header Accept = 'application/json'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 201</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def value = response.value</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'created value: ', value</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Given</span>
+  <span class="name">path value</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">match response contains jsonVoteDown&nbsp;</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">000ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-43">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-43" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-44">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-44" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url 'https://api.thedogapi.com/v1'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-45">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-45" class="collapse collapsable-details">
+        <pre>09:39:42.643 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header x-api-key = 'live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header 'Content-Type' = 'application/json'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">852ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-46">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">verify that I can delete vote by id</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-46" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-47">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-47" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'votes/145519'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header 'Content-Type' = 'application/json'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method delete</span>
+  
+  <span class="lead-duration duration">852ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-48">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-48" class="collapse collapsable-details">
+        <pre>09:39:42.644 request:
+1 &gt; DELETE https://api.thedogapi.com/v1/votes/145519
+1 &gt; x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 &gt; 'Content-Type': application/json
+1 &gt; Host: api.thedogapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+09:39:43.495 response time in milliseconds: 851
+1 &lt; 404
+1 &lt; content-type: text/plain; charset=utf-8
+1 &lt; X-Cloud-Trace-Context: b845b1addc68ebdf76ac80bc0100058c
+1 &lt; Date: Fri, 17 Mar 2023 07:39:41 GMT
+1 &lt; Server: Google Frontend
+1 &lt; Content-Length: 25
+NO_VOTE_FOUND_MATCHING_ID
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 400</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-49">
+          <a>status code was: 404, expected: 400, response time in milliseconds: 851, url: https://api.thedogapi.com/v1/votes/145519, response: </a>
+      </div>
+      <div id="msg-49" class="collapse collapsable-details  in ">
+        <pre>status code was: 404, expected: 400, response time in milliseconds: 851, url: https://api.thedogapi.com/v1/votes/145519, response: 
+NO_VOTE_FOUND_MATCHING_ID
+classpath:features/vote.feature:94</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-50">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-50" class="collapse collapsable-details">
+        <pre>09:39:43.496 classpath:features/vote.feature:94
+Then status 400
+status code was: 404, expected: 400, response time in milliseconds: 851, url: https://api.thedogapi.com/v1/votes/145519, response: 
+NO_VOTE_FOUND_MATCHING_ID
+classpath:features/vote.feature:94
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">eval karate.log('Response:', response)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
