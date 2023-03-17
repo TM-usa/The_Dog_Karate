@@ -22,30 +22,30 @@
       <img src="karate-logo.svg" alt="Karate"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">3</div>
-      <div id="nav-fail" class="bg-danger">1</div>
+      <div id="nav-pass" class="bg-success">4</div>
+      <div id="nav-fail" class="bg-danger">0</div>
     </div>
   </div>
   <div id="nav-type">
     <div>Scenarios</div>
   </div>         
   <div id="nav-date">
-    <div>2023-03-17 03:41:47 AM</div>
+    <div>2023-03-17 08:38:10 AM</div>
   </div>        
 </div>
 
         <div class="nav-container">
           <div class="nav-item passed">
-            <a href="#[1:8]"><span>[1:8]</span> <span>test that I can Get a favorite by favourite Id</span></a>
+            <a href="#[1:8]"><span>[1:8]</span> <span>verify that I can Get a favorite by favourite Id</span></a>
           </div>
           <div class="nav-item passed">
-            <a href="#[2:18]"><span>[2:18]</span> <span>test that i can save a favorite with image id</span></a>
-          </div>
-          <div class="nav-item failed">
-            <a href="#[3:28]"><span>[3:28]</span> <span>test that i can create a favorite with image id</span></a>
+            <a href="#[2:18]"><span>[2:18]</span> <span>verify that i can save a favorite with image id</span></a>
           </div>
           <div class="nav-item passed">
-            <a href="#[4:45]"><span>[4:45]</span> <span>test that I can delete favorite by ID</span></a>
+            <a href="#[3:28]"><span>[3:28]</span> <span>verify that i can create a favorite with image id and Sub id successfully</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4:46]"><span>[4:46]</span> <span>verify that I can delete favorite by ID</span></a>
           </div>
         </div>
       </div>
@@ -66,12 +66,12 @@
               </div>
               <div class="scenario-keyword">
                 Scenario: <span>[1:8]</span>
-                <span class="scenario-name">test that I can Get a favorite by favourite Id</span>
+                <span class="scenario-name">verify that I can Get a favorite by favourite Id</span>
                 <span></span>
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>2082</span>
+              <span>ms:</span>&nbsp;<span>1554</span>
             </div>
           </div>
           <div class="step-row">
@@ -94,7 +94,7 @@
         <span>*</span>&nbsp;<span>url &#39;https://api.thedogapi.com/v1&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -103,7 +103,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.4">03:41:40.952 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">08:38:06.927 karate.env system property was: null 
 </div>   
 
   
@@ -207,7 +207,7 @@
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">2046</div>
+    <div class="time-cell passed">1530</div>
   </div>
 
    
@@ -216,7 +216,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.10">03:41:41.550 request:
+  <div class="preformatted" data-parent="0.10">08:38:07.310 request:
 1 &gt; GET https://api.thedogapi.com/v1/favourites/1
 1 &gt; x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
 1 &gt; &#39;Content-Type&#39;: application/json
@@ -226,7 +226,7 @@
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-03:41:43.028 response time in milliseconds: 1475
+08:38:08.474 response time in milliseconds: 1162
 1 &lt; 200
 1 &lt; x-dns-prefetch-control: off
 1 &lt; x-frame-options: SAMEORIGIN
@@ -239,11 +239,11 @@
 1 &lt; ratelimit-limit: 120
 1 &lt; ratelimit-remaining: 119
 1 &lt; ratelimit-consumed: 1
-1 &lt; ratelimit-reset: 2023-03-17T01:42:40.641Z
+1 &lt; ratelimit-reset: 2023-03-17T06:39:06.022Z
 1 &lt; content-type: application/json; charset=utf-8
-1 &lt; x-response-time: 208ms
-1 &lt; X-Cloud-Trace-Context: 0c832cdb0f140840c7c80ad74a52946b
-1 &lt; Date: Fri, 17 Mar 2023 01:41:40 GMT
+1 &lt; x-response-time: 215ms
+1 &lt; X-Cloud-Trace-Context: 472744ab670a5dd834a14a51a06657a4
+1 &lt; Date: Fri, 17 Mar 2023 06:38:06 GMT
 1 &lt; Server: Google Frontend
 1 &lt; Content-Length: 112
 {&quot;id&quot;:1,&quot;user_id&quot;:&quot;0&quot;,&quot;image_id&quot;:&quot;0&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;,&quot;created_at&quot;:&quot;2018-07-29T11:52:56.000Z&quot;,&quot;image&quot;:{}}
@@ -294,7 +294,7 @@
         <span>And</span>&nbsp;<span>match response.sub_id == &#39;my-user-1234&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">26</div>
+    <div class="time-cell passed">17</div>
   </div>
 
    
@@ -359,7 +359,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.14">03:41:43.081 Response: {
+  <div class="preformatted" data-parent="0.14">08:38:08.511 Response: {
   &quot;id&quot;: 1,
   &quot;user_id&quot;: &quot;0&quot;,
   &quot;image_id&quot;: &quot;0&quot;,
@@ -388,7 +388,7 @@
         <span>Then</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -397,7 +397,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.15">03:41:43.084 [print] {
+  <div class="preformatted" data-parent="0.15">08:38:08.513 [print] {
   &quot;id&quot;: 1,
   &quot;user_id&quot;: &quot;0&quot;,
   &quot;image_id&quot;: &quot;0&quot;,
@@ -422,12 +422,12 @@
               </div>
               <div class="scenario-keyword">
                 Scenario: <span>[2:18]</span>
-                <span class="scenario-name">test that i can save a favorite with image id</span>
+                <span class="scenario-name">verify that i can save a favorite with image id</span>
                 <span></span>
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>1449</span>
+              <span>ms:</span>&nbsp;<span>972</span>
             </div>
           </div>
           <div class="step-row">
@@ -459,7 +459,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.4">03:41:43.105 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">08:38:08.522 karate.env system property was: null 
 </div>   
 
   
@@ -479,7 +479,7 @@
         <span>*</span>&nbsp;<span>header x-api-key = &#39;live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -619,7 +619,7 @@
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">1440</div>
+    <div class="time-cell passed">966</div>
   </div>
 
    
@@ -628,7 +628,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.22">03:41:43.148 request:
+  <div class="preformatted" data-parent="0.22">08:38:08.550 request:
 1 &gt; POST https://api.thedogapi.com/v1/favourites
 1 &gt; x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
 1 &gt; &#39;Content-Type&#39;: application/json
@@ -640,7 +640,7 @@
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;image_id&quot;:&quot;HkRcZe547&quot;}
 
-03:41:44.547 response time in milliseconds: 1398
+08:38:09.487 response time in milliseconds: 937
 1 &lt; 200
 1 &lt; x-dns-prefetch-control: off
 1 &lt; x-frame-options: SAMEORIGIN
@@ -649,18 +649,18 @@
 1 &lt; x-content-type-options: nosniff
 1 &lt; x-xss-protection: 1; mode=block
 1 &lt; vary: Origin
-1 &lt; retry-after-seconds: 58.683
+1 &lt; retry-after-seconds: 58.95
 1 &lt; ratelimit-limit: 120
 1 &lt; ratelimit-remaining: 118
 1 &lt; ratelimit-consumed: 2
-1 &lt; ratelimit-reset: 2023-03-17T01:42:40.642Z
+1 &lt; ratelimit-reset: 2023-03-17T06:39:06.022Z
 1 &lt; content-type: application/json; charset=utf-8
-1 &lt; x-response-time: 208ms
-1 &lt; X-Cloud-Trace-Context: 6696428e11c072fa51ebb4d742371641
-1 &lt; Date: Fri, 17 Mar 2023 01:41:42 GMT
+1 &lt; x-response-time: 199ms
+1 &lt; X-Cloud-Trace-Context: db8da497414c9a1e7131de3921de3e07
+1 &lt; Date: Fri, 17 Mar 2023 06:38:07 GMT
 1 &lt; Server: Google Frontend
 1 &lt; Content-Length: 32
-{&quot;message&quot;:&quot;SUCCESS&quot;,&quot;id&quot;:71123}
+{&quot;message&quot;:&quot;SUCCESS&quot;,&quot;id&quot;:71138}
 </div>   
 
   
@@ -736,7 +736,7 @@
         <span>And</span>&nbsp;<span>eval karate.log(&#39;Response:&#39;, response)</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -745,9 +745,9 @@
 
   
 
-  <div class="preformatted" data-parent="0.25">03:41:44.553 Response: {
+  <div class="preformatted" data-parent="0.25">08:38:09.494 Response: {
   &quot;message&quot;: &quot;SUCCESS&quot;,
-  &quot;id&quot;: 71123
+  &quot;id&quot;: 71138
 }
  
 </div>   
@@ -769,7 +769,7 @@
         <span>And</span>&nbsp;<span>karate.log(&quot;created dog saved!&quot;);</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -778,7 +778,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.26">03:41:44.557 created dog saved! 
+  <div class="preformatted" data-parent="0.26">08:38:09.496 created dog saved! 
 </div>   
 
   
@@ -794,12 +794,12 @@
               </div>
               <div class="scenario-keyword">
                 Scenario: <span>[3:28]</span>
-                <span class="scenario-name">test that i can create a favorite with image id</span>
+                <span class="scenario-name">verify that i can create a favorite with image id and Sub id successfully</span>
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>1105</span>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>567</span>
             </div>
           </div>
           <div class="step-row">
@@ -831,7 +831,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.4">03:41:44.568 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">08:38:09.501 karate.env system property was: null 
 </div>   
 
   
@@ -904,7 +904,7 @@
       <div class="step-ref passed">30</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def v1 =</span>
+        <span>*</span>&nbsp;<span>def jsonObject =</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -963,7 +963,7 @@
       <div class="step-ref passed">40</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request v1</span>
+        <span>When</span>&nbsp;<span>request  jsonObject</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -991,10 +991,10 @@
       <div class="step-ref passed">41</div>
       
       <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method post</span>
+        <span>And</span>&nbsp;<span>header Accept = &#39;application/json&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1104</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1003,10 +1003,39 @@
 
   
 
-  <div class="preformatted" data-parent="0.41">03:41:44.571 request:
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">565</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.42">08:38:09.504 request:
 1 &gt; POST https://api.thedogapi.com/v1/favorites
 1 &gt; x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
 1 &gt; &#39;Content-Type&#39;: application/json
+1 &gt; Accept: application/json
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 49
 1 &gt; Host: api.thedogapi.com
@@ -1015,7 +1044,7 @@
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;image_id&quot;:&quot;Thapelo123&quot;,&quot;sub_id&quot;:&quot;my-user-1234&quot;}
 
-03:41:45.672 response time in milliseconds: 1100
+08:38:10.067 response time in milliseconds: 561
 1 &lt; 404
 1 &lt; x-dns-prefetch-control: off
 1 &lt; x-frame-options: SAMEORIGIN
@@ -1026,8 +1055,8 @@
 1 &lt; vary: Origin
 1 &lt; content-type: application/json; charset=utf-8
 1 &lt; x-response-time: 1ms
-1 &lt; X-Cloud-Trace-Context: 6713059f2c9e39f5b58c13e217e527c9
-1 &lt; Date: Fri, 17 Mar 2023 01:41:43 GMT
+1 &lt; X-Cloud-Trace-Context: ed6a3edf801b584c6f26aab8a3fcc9c8
+1 &lt; Date: Fri, 17 Mar 2023 06:38:07 GMT
 1 &lt; Server: Google Frontend
 1 &lt; Content-Length: 105
 {&quot;message&quot;:&quot;404 - please consult the documentation for correct url to call. https://docs.thedogapi.com/&quot;}
@@ -1043,14 +1072,14 @@
   
 
   <div class="step-row">
-    <div class="step-container" id="0.42">
-      <div class="step-ref failed">42</div>
+    <div class="step-container" id="0.43">
+      <div class="step-ref passed">43</div>
       
-      <div class="step-cell failed">
-        <span>Then</span>&nbsp;<span>status 200</span>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 404</span>
       </div>
     </div>
-    <div class="time-cell failed">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1059,12 +1088,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.42">03:41:45.675 classpath:favourites/favs/favs.feature:42
-Then status 200
-status code was: 404, expected: 200, response time in milliseconds: 1100, url: https://api.thedogapi.com/v1/favorites, response: 
-{&quot;message&quot;:&quot;404 - please consult the documentation for correct url to call. https://docs.thedogapi.com/&quot;}
-classpath:favourites/favs/favs.feature:42
-</div>   
+     
 
   
 
@@ -1072,29 +1096,29 @@ classpath:favourites/favs/favs.feature:42
 </div>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[4:45]">
+          <div class="scenario-heading" id="[4:46]">
             <div class="heading-container">
               <div class="scenario-tags">
                 
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[4:45]</span>
-                <span class="scenario-name">test that I can delete favorite by ID</span>
+                Scenario: <span>[4:46]</span>
+                <span class="scenario-name">verify that I can delete favorite by ID</span>
                 <span></span>
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>1616</span>
+              <span>ms:</span>&nbsp;<span>890</span>
             </div>
           </div>
           <div class="step-row">
-            <div class="step-container" id="[4:45]bg">
+            <div class="step-container" id="[4:46]bg">
               <div class="step-ref bg-step">&gt;&gt;</div>
               <div class="step-cell passed">Background:</div>
             </div>
             <div class="time-cell passed"></div>
           </div>
-          <div data-parent="[4:45]bg"><div>
+          <div data-parent="[4:46]bg"><div>
   
 
   
@@ -1116,14 +1140,14 @@ classpath:favourites/favs/favs.feature:42
 
   
 
-  <div class="preformatted" data-parent="0.4">03:41:45.698 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">08:38:10.076 karate.env system property was: null 
 </div>   
 
   
 
 </div>
 </div>
-          <div data-parent="[4:45]bg"><div>
+          <div data-parent="[4:46]bg"><div>
   
 
   
@@ -1151,7 +1175,7 @@ classpath:favourites/favs/favs.feature:42
 
 </div>
 </div>
-          <div data-parent="[4:45]bg"><div>
+          <div data-parent="[4:46]bg"><div>
   
 
   
@@ -1185,39 +1209,11 @@ classpath:favourites/favs/favs.feature:42
   
 
   <div class="step-row">
-    <div class="step-container" id="0.46">
-      <div class="step-ref passed">46</div>
-      
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path &#39;favourites/1&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
     <div class="step-container" id="0.47">
       <div class="step-ref passed">47</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>header &#39;Content-Type&#39; = &#39;application/json&#39;</span>
+        <span>Given</span>&nbsp;<span>path &#39;favourites/1&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -1245,10 +1241,10 @@ classpath:favourites/favs/favs.feature:42
       <div class="step-ref passed">48</div>
       
       <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method delete</span>
+        <span>And</span>&nbsp;<span>header &#39;Content-Type&#39; = &#39;application/json&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1613</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1257,7 +1253,35 @@ classpath:favourites/favs/favs.feature:42
 
   
 
-  <div class="preformatted" data-parent="0.48">03:41:45.702 request:
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.49">
+      <div class="step-ref passed">49</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method delete</span>
+      </div>
+    </div>
+    <div class="time-cell passed">889</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.49">08:38:10.078 request:
 1 &gt; DELETE https://api.thedogapi.com/v1/favourites/1
 1 &gt; x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
 1 &gt; &#39;Content-Type&#39;: application/json
@@ -1267,11 +1291,11 @@ classpath:favourites/favs/favs.feature:42
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-03:41:47.311 response time in milliseconds: 1609
+08:38:10.964 response time in milliseconds: 885
 1 &lt; 400
 1 &lt; content-type: text/plain; charset=utf-8
-1 &lt; X-Cloud-Trace-Context: ba48286427d1899d3f4468042f091abf
-1 &lt; Date: Fri, 17 Mar 2023 01:41:45 GMT
+1 &lt; X-Cloud-Trace-Context: 1ec361138ddb60d877cd91f1d598f509;o=1
+1 &lt; Date: Fri, 17 Mar 2023 06:38:08 GMT
 1 &lt; Server: Google Frontend
 1 &lt; Content-Length: 15
 INVALID_ACCOUNT
@@ -1287,8 +1311,8 @@ INVALID_ACCOUNT
   
 
   <div class="step-row">
-    <div class="step-container" id="0.49">
-      <div class="step-ref passed">49</div>
+    <div class="step-container" id="0.50">
+      <div class="step-ref passed">50</div>
       
       <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 400</span>
@@ -1315,8 +1339,8 @@ INVALID_ACCOUNT
   
 
   <div class="step-row">
-    <div class="step-container" id="0.50">
-      <div class="step-ref passed">50</div>
+    <div class="step-container" id="0.51">
+      <div class="step-ref passed">51</div>
       
       <div class="step-cell passed">
         <span>And</span>&nbsp;<span>eval karate.log(&#39;Response:&#39;, response)</span>
@@ -1331,7 +1355,7 @@ INVALID_ACCOUNT
 
   
 
-  <div class="preformatted" data-parent="0.50">03:41:47.315 Response: INVALID_ACCOUNT 
+  <div class="preformatted" data-parent="0.51">08:38:10.966 Response: INVALID_ACCOUNT 
 </div>   
 
   
