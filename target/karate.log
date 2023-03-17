@@ -1840,3 +1840,1832 @@ INVALID_ACCOUNT
  
 02:47:33.785 [pool-1-thread-2] INFO  com.intuit.karate - created dog saved! 
 02:47:34.542 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:favourites/favs/favs.feature
+03:04:18.539 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+03:04:19.732 [main] INFO  com.intuit.karate - karate.env system property was: null 
+03:04:20.414 [main] DEBUG com.intuit.karate - request:
+1 > GET https://api.thedogapi.com/v1/favourites/70443
+1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 > 'Content-Type': application/json
+1 > Host: api.thedogapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 > Accept-Encoding: gzip,deflate
+
+
+03:04:21.763 [main] DEBUG com.intuit.karate - response time in milliseconds: 1346
+1 < 200
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < vary: Origin
+1 < retry-after-seconds: 60
+1 < ratelimit-limit: 120
+1 < ratelimit-remaining: 119
+1 < ratelimit-consumed: 1
+1 < ratelimit-reset: 2023-03-17T01:05:22.907Z
+1 < content-type: application/json; charset=utf-8
+1 < x-response-time: 204ms
+1 < X-Cloud-Trace-Context: 5a4075b4933316ae57b0462b40268e09
+1 < Date: Fri, 17 Mar 2023 01:04:23 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 128
+{"id":70443,"user_id":"1qwfju","image_id":"9reeeeee","sub_id":"my-user-1234","created_at":"2023-03-14T20:26:27.000Z","image":{}}
+03:04:21.813 [main] INFO  com.intuit.karate - Response: {
+  "id": 70443,
+  "user_id": "1qwfju",
+  "image_id": "9reeeeee",
+  "sub_id": "my-user-1234",
+  "created_at": "2023-03-14T20:26:27.000Z",
+  "image": {
+  }
+}
+ 
+03:04:21.816 [main] INFO  com.intuit.karate - [print] {
+  "id": 70443,
+  "user_id": "1qwfju",
+  "image_id": "9reeeeee",
+  "sub_id": "my-user-1234",
+  "created_at": "2023-03-14T20:26:27.000Z",
+  "image": {
+  }
+}
+ 
+03:04:21.831 [main] INFO  com.intuit.karate - karate.env system property was: null 
+03:04:21.870 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.thedogapi.com/v1/favourites
+1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 > 'Content-Type': application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 23
+1 > Host: api.thedogapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 > Accept-Encoding: gzip,deflate
+{"image_id":"12g3fg45"}
+
+03:04:22.950 [main] DEBUG com.intuit.karate - response time in milliseconds: 1079
+1 < 200
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < vary: Origin
+1 < retry-after-seconds: 58.868
+1 < ratelimit-limit: 120
+1 < ratelimit-remaining: 118
+1 < ratelimit-consumed: 2
+1 < ratelimit-reset: 2023-03-17T01:05:22.909Z
+1 < content-type: application/json; charset=utf-8
+1 < x-response-time: 242ms
+1 < X-Cloud-Trace-Context: 8d38ec7b3dd5617c01a135ac39e8bdd9
+1 < Date: Fri, 17 Mar 2023 01:04:24 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 32
+{"message":"SUCCESS","id":71109}
+03:04:22.959 [main] INFO  com.intuit.karate - Response: {
+  "message": "SUCCESS",
+  "id": 71109
+}
+ 
+03:04:22.961 [main] INFO  com.intuit.karate - created dog saved! 
+03:04:22.969 [main] INFO  com.intuit.karate - karate.env system property was: null 
+03:04:22.972 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://api.thedogapi.com/v1/favourites/70379
+1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 > 'Content-Type': application/json
+1 > Host: api.thedogapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 > Accept-Encoding: gzip,deflate
+
+
+03:04:24.279 [main] DEBUG com.intuit.karate - response time in milliseconds: 1306
+1 < 400
+1 < content-type: text/plain; charset=utf-8
+1 < X-Cloud-Trace-Context: 3b7b6db9b752b279ddfab7efb842cc96
+1 < Date: Fri, 17 Mar 2023 01:04:25 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 15
+INVALID_ACCOUNT
+03:04:24.283 [main] INFO  com.intuit.karate - Response: INVALID_ACCOUNT 
+03:05:26.906 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+03:05:28.084 [main] INFO  com.intuit.karate - karate.env system property was: null 
+03:05:28.729 [main] DEBUG com.intuit.karate - request:
+1 > GET https://api.thedogapi.com/v1/favourites/1
+1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 > 'Content-Type': application/json
+1 > Host: api.thedogapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 > Accept-Encoding: gzip,deflate
+
+
+03:05:30.444 [main] DEBUG com.intuit.karate - response time in milliseconds: 1711
+1 < 200
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < vary: Origin
+1 < retry-after-seconds: 60
+1 < ratelimit-limit: 120
+1 < ratelimit-remaining: 119
+1 < ratelimit-consumed: 1
+1 < ratelimit-reset: 2023-03-17T01:06:31.319Z
+1 < content-type: application/json; charset=utf-8
+1 < x-response-time: 285ms
+1 < X-Cloud-Trace-Context: dfa7e462671cb9080f789340bf6a9a15
+1 < Date: Fri, 17 Mar 2023 01:05:31 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 112
+{"id":1,"user_id":"0","image_id":"0","sub_id":"my-user-1234","created_at":"2018-07-29T11:52:56.000Z","image":{}}
+03:05:30.502 [main] ERROR com.intuit.karate - classpath:favourites/favs/favs.feature:13
+And match response.id == 70443
+match failed: EQUALS
+  $ | not equal (NUMBER:NUMBER)
+  1
+  70443
+
+classpath:favourites/favs/favs.feature:13
+03:05:30.532 [main] INFO  com.intuit.karate - karate.env system property was: null 
+03:05:30.570 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.thedogapi.com/v1/favourites
+1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 > 'Content-Type': application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 23
+1 > Host: api.thedogapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 > Accept-Encoding: gzip,deflate
+{"image_id":"12g3fg45"}
+
+03:05:31.656 [main] DEBUG com.intuit.karate - response time in milliseconds: 1086
+1 < 200
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < vary: Origin
+1 < retry-after-seconds: 58.619
+1 < ratelimit-limit: 120
+1 < ratelimit-remaining: 118
+1 < ratelimit-consumed: 2
+1 < ratelimit-reset: 2023-03-17T01:06:31.320Z
+1 < content-type: application/json; charset=utf-8
+1 < x-response-time: 217ms
+1 < X-Cloud-Trace-Context: 41d319f383a0bae383a43dbaad97be0b
+1 < Date: Fri, 17 Mar 2023 01:05:32 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 32
+{"message":"SUCCESS","id":71110}
+03:05:31.664 [main] INFO  com.intuit.karate - Response: {
+  "message": "SUCCESS",
+  "id": 71110
+}
+ 
+03:05:31.670 [main] INFO  com.intuit.karate - created dog saved! 
+03:05:31.679 [main] INFO  com.intuit.karate - karate.env system property was: null 
+03:05:31.683 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://api.thedogapi.com/v1/favourites/70379
+1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 > 'Content-Type': application/json
+1 > Host: api.thedogapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 > Accept-Encoding: gzip,deflate
+
+
+03:05:32.680 [main] DEBUG com.intuit.karate - response time in milliseconds: 996
+1 < 400
+1 < content-type: text/plain; charset=utf-8
+1 < X-Cloud-Trace-Context: a15ff6321827654708f9764f09bad0e5
+1 < Date: Fri, 17 Mar 2023 01:05:33 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 15
+INVALID_ACCOUNT
+03:05:32.683 [main] INFO  com.intuit.karate - Response: INVALID_ACCOUNT 
+03:06:04.928 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+03:06:06.100 [main] INFO  com.intuit.karate - karate.env system property was: null 
+03:06:06.780 [main] DEBUG com.intuit.karate - request:
+1 > GET https://api.thedogapi.com/v1/favourites/1
+1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 > 'Content-Type': application/json
+1 > Host: api.thedogapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 > Accept-Encoding: gzip,deflate
+
+
+03:06:08.436 [main] DEBUG com.intuit.karate - response time in milliseconds: 1652
+1 < 200
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < vary: Origin
+1 < retry-after-seconds: 21.84
+1 < ratelimit-limit: 120
+1 < ratelimit-remaining: 116
+1 < ratelimit-consumed: 4
+1 < ratelimit-reset: 2023-03-17T01:06:31.321Z
+1 < content-type: application/json; charset=utf-8
+1 < x-response-time: 203ms
+1 < X-Cloud-Trace-Context: f9b7957d813cc20abf020a7b638b4a51
+1 < Date: Fri, 17 Mar 2023 01:06:09 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 112
+{"id":1,"user_id":"0","image_id":"0","sub_id":"my-user-1234","created_at":"2018-07-29T11:52:56.000Z","image":{}}
+03:06:08.503 [main] INFO  com.intuit.karate - Response: {
+  "id": 1,
+  "user_id": "0",
+  "image_id": "0",
+  "sub_id": "my-user-1234",
+  "created_at": "2018-07-29T11:52:56.000Z",
+  "image": {
+  }
+}
+ 
+03:06:08.504 [main] INFO  com.intuit.karate - [print] {
+  "id": 1,
+  "user_id": "0",
+  "image_id": "0",
+  "sub_id": "my-user-1234",
+  "created_at": "2018-07-29T11:52:56.000Z",
+  "image": {
+  }
+}
+ 
+03:06:08.521 [main] INFO  com.intuit.karate - karate.env system property was: null 
+03:06:08.565 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.thedogapi.com/v1/favourites
+1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 > 'Content-Type': application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 23
+1 > Host: api.thedogapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 > Accept-Encoding: gzip,deflate
+{"image_id":"12g3fg45"}
+
+03:06:09.646 [main] DEBUG com.intuit.karate - response time in milliseconds: 1081
+1 < 200
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < vary: Origin
+1 < retry-after-seconds: 20.529
+1 < ratelimit-limit: 120
+1 < ratelimit-remaining: 115
+1 < ratelimit-consumed: 5
+1 < ratelimit-reset: 2023-03-17T01:06:31.319Z
+1 < content-type: application/json; charset=utf-8
+1 < x-response-time: 200ms
+1 < X-Cloud-Trace-Context: 9ceea32c05a5b7d7b403f620ae9b403e
+1 < Date: Fri, 17 Mar 2023 01:06:10 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 32
+{"message":"SUCCESS","id":71111}
+03:06:09.653 [main] INFO  com.intuit.karate - Response: {
+  "message": "SUCCESS",
+  "id": 71111
+}
+ 
+03:06:09.657 [main] INFO  com.intuit.karate - created dog saved! 
+03:06:09.665 [main] INFO  com.intuit.karate - karate.env system property was: null 
+03:06:09.668 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://api.thedogapi.com/v1/favourites/70379
+1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 > 'Content-Type': application/json
+1 > Host: api.thedogapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 > Accept-Encoding: gzip,deflate
+
+
+03:06:10.683 [main] DEBUG com.intuit.karate - response time in milliseconds: 1015
+1 < 400
+1 < content-type: text/plain; charset=utf-8
+1 < X-Cloud-Trace-Context: e2b0e47b7e62388c5a450356286e2a8d;o=1
+1 < Date: Fri, 17 Mar 2023 01:06:12 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 15
+INVALID_ACCOUNT
+03:06:10.687 [main] INFO  com.intuit.karate - Response: INVALID_ACCOUNT 
+03:07:40.359 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+03:07:41.630 [main] INFO  com.intuit.karate - karate.env system property was: null 
+03:07:42.326 [main] DEBUG com.intuit.karate - request:
+1 > GET https://api.thedogapi.com/v1/favourites/1
+1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 > 'Content-Type': application/json
+1 > Host: api.thedogapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 > Accept-Encoding: gzip,deflate
+
+
+03:07:44.316 [main] DEBUG com.intuit.karate - response time in milliseconds: 1986
+1 < 200
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < vary: Origin
+1 < retry-after-seconds: 60
+1 < ratelimit-limit: 120
+1 < ratelimit-remaining: 119
+1 < ratelimit-consumed: 1
+1 < ratelimit-reset: 2023-03-17T01:08:45.149Z
+1 < content-type: application/json; charset=utf-8
+1 < x-response-time: 210ms
+1 < X-Cloud-Trace-Context: f721478be7e9d3163224346ad525c833;o=1
+1 < Date: Fri, 17 Mar 2023 01:07:45 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 112
+{"id":1,"user_id":"0","image_id":"0","sub_id":"my-user-1234","created_at":"2018-07-29T11:52:56.000Z","image":{}}
+03:07:44.380 [main] INFO  com.intuit.karate - Response: {
+  "id": 1,
+  "user_id": "0",
+  "image_id": "0",
+  "sub_id": "my-user-1234",
+  "created_at": "2018-07-29T11:52:56.000Z",
+  "image": {
+  }
+}
+ 
+03:07:44.381 [main] INFO  com.intuit.karate - [print] {
+  "id": 1,
+  "user_id": "0",
+  "image_id": "0",
+  "sub_id": "my-user-1234",
+  "created_at": "2018-07-29T11:52:56.000Z",
+  "image": {
+  }
+}
+ 
+03:07:44.399 [main] INFO  com.intuit.karate - karate.env system property was: null 
+03:07:44.438 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.thedogapi.com/v1/favourites
+1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 > 'Content-Type': application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 24
+1 > Host: api.thedogapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 > Accept-Encoding: gzip,deflate
+{"image_id":"HkRcZe547"}
+
+03:07:45.698 [main] DEBUG com.intuit.karate - response time in milliseconds: 1259
+1 < 200
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < vary: Origin
+1 < retry-after-seconds: 58.311
+1 < ratelimit-limit: 120
+1 < ratelimit-remaining: 118
+1 < ratelimit-consumed: 2
+1 < ratelimit-reset: 2023-03-17T01:08:45.151Z
+1 < content-type: application/json; charset=utf-8
+1 < x-response-time: 188ms
+1 < X-Cloud-Trace-Context: 4df42f3ecd587d129454fa8502f8f008
+1 < Date: Fri, 17 Mar 2023 01:07:47 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 32
+{"message":"SUCCESS","id":71112}
+03:07:45.706 [main] INFO  com.intuit.karate - Response: {
+  "message": "SUCCESS",
+  "id": 71112
+}
+ 
+03:07:45.708 [main] INFO  com.intuit.karate - created dog saved! 
+03:07:45.715 [main] INFO  com.intuit.karate - karate.env system property was: null 
+03:07:45.718 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://api.thedogapi.com/v1/favourites/70379
+1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 > 'Content-Type': application/json
+1 > Host: api.thedogapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 > Accept-Encoding: gzip,deflate
+
+
+03:07:46.776 [main] DEBUG com.intuit.karate - response time in milliseconds: 1058
+1 < 400
+1 < content-type: text/plain; charset=utf-8
+1 < X-Cloud-Trace-Context: 80aed26436dd9d1a0cc7cd2f2255ed1e
+1 < Date: Fri, 17 Mar 2023 01:07:48 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 15
+INVALID_ACCOUNT
+03:07:46.779 [main] INFO  com.intuit.karate - Response: INVALID_ACCOUNT 
+03:10:04.844 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+03:10:06.097 [main] INFO  com.intuit.karate - karate.env system property was: null 
+03:10:06.782 [main] DEBUG com.intuit.karate - request:
+1 > GET https://api.thedogapi.com/v1/favourites/1
+1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 > 'Content-Type': application/json
+1 > Host: api.thedogapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 > Accept-Encoding: gzip,deflate
+
+
+03:10:08.154 [main] DEBUG com.intuit.karate - response time in milliseconds: 1368
+1 < 200
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < vary: Origin
+1 < retry-after-seconds: 31.84
+1 < ratelimit-limit: 120
+1 < ratelimit-remaining: 118
+1 < ratelimit-consumed: 2
+1 < ratelimit-reset: 2023-03-17T01:10:41.079Z
+1 < content-type: application/json; charset=utf-8
+1 < x-response-time: 238ms
+1 < X-Cloud-Trace-Context: 338c7cc8fd24b31a04acad1a1bc553c3
+1 < Date: Fri, 17 Mar 2023 01:10:09 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 112
+{"id":1,"user_id":"0","image_id":"0","sub_id":"my-user-1234","created_at":"2018-07-29T11:52:56.000Z","image":{}}
+03:10:08.213 [main] INFO  com.intuit.karate - Response: {
+  "id": 1,
+  "user_id": "0",
+  "image_id": "0",
+  "sub_id": "my-user-1234",
+  "created_at": "2018-07-29T11:52:56.000Z",
+  "image": {
+  }
+}
+ 
+03:10:08.214 [main] INFO  com.intuit.karate - [print] {
+  "id": 1,
+  "user_id": "0",
+  "image_id": "0",
+  "sub_id": "my-user-1234",
+  "created_at": "2018-07-29T11:52:56.000Z",
+  "image": {
+  }
+}
+ 
+03:10:08.230 [main] INFO  com.intuit.karate - karate.env system property was: null 
+03:10:08.265 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.thedogapi.com/v1/favourites
+1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 > 'Content-Type': application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 24
+1 > Host: api.thedogapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 > Accept-Encoding: gzip,deflate
+{"image_id":"HkRcZe547"}
+
+03:10:09.605 [main] DEBUG com.intuit.karate - response time in milliseconds: 1340
+1 < 200
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < vary: Origin
+1 < retry-after-seconds: 30.56
+1 < ratelimit-limit: 120
+1 < ratelimit-remaining: 117
+1 < ratelimit-consumed: 3
+1 < ratelimit-reset: 2023-03-17T01:10:41.077Z
+1 < content-type: application/json; charset=utf-8
+1 < x-response-time: 183ms
+1 < X-Cloud-Trace-Context: b3839f7479d0e1d588753e851c72891c;o=1
+1 < Date: Fri, 17 Mar 2023 01:10:10 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 32
+{"message":"SUCCESS","id":71113}
+03:10:09.622 [main] INFO  com.intuit.karate - Response: {
+  "message": "SUCCESS",
+  "id": 71113
+}
+ 
+03:10:09.624 [main] INFO  com.intuit.karate - created dog saved! 
+03:10:09.632 [main] INFO  com.intuit.karate - karate.env system property was: null 
+03:10:09.635 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://api.thedogapi.com/v1/favourites/1
+1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 > 'Content-Type': application/json
+1 > Host: api.thedogapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 > Accept-Encoding: gzip,deflate
+
+
+03:10:10.631 [main] DEBUG com.intuit.karate - response time in milliseconds: 996
+1 < 400
+1 < content-type: text/plain; charset=utf-8
+1 < X-Cloud-Trace-Context: 843798aa2e3f619148b87c40b61f8d83
+1 < Date: Fri, 17 Mar 2023 01:10:11 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 15
+INVALID_ACCOUNT
+03:10:10.636 [main] INFO  com.intuit.karate - Response: INVALID_ACCOUNT 
+03:15:49.495 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+03:15:50.778 [main] INFO  com.intuit.karate - karate.env system property was: null 
+03:15:51.406 [main] DEBUG com.intuit.karate - request:
+1 > GET https://api.thedogapi.com/v1/favourites/1
+1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 > 'Content-Type': application/json
+1 > Host: api.thedogapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 > Accept-Encoding: gzip,deflate
+
+
+03:15:52.922 [main] DEBUG com.intuit.karate - response time in milliseconds: 1514
+1 < 200
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < vary: Origin
+1 < retry-after-seconds: 1.734
+1 < ratelimit-limit: 120
+1 < ratelimit-remaining: 116
+1 < ratelimit-consumed: 4
+1 < ratelimit-reset: 2023-03-17T01:15:55.601Z
+1 < content-type: application/json; charset=utf-8
+1 < x-response-time: 303ms
+1 < X-Cloud-Trace-Context: fe3b960d75c75a1146b953dbbf25c4c8
+1 < Date: Fri, 17 Mar 2023 01:15:54 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 112
+{"id":1,"user_id":"0","image_id":"0","sub_id":"my-user-1234","created_at":"2018-07-29T11:52:56.000Z","image":{}}
+03:15:52.980 [main] INFO  com.intuit.karate - Response: {
+  "id": 1,
+  "user_id": "0",
+  "image_id": "0",
+  "sub_id": "my-user-1234",
+  "created_at": "2018-07-29T11:52:56.000Z",
+  "image": {
+  }
+}
+ 
+03:15:52.982 [main] INFO  com.intuit.karate - [print] {
+  "id": 1,
+  "user_id": "0",
+  "image_id": "0",
+  "sub_id": "my-user-1234",
+  "created_at": "2018-07-29T11:52:56.000Z",
+  "image": {
+  }
+}
+ 
+03:15:52.997 [main] INFO  com.intuit.karate - karate.env system property was: null 
+03:15:53.042 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.thedogapi.com/v1/favourites
+1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 > 'Content-Type': application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 24
+1 > Host: api.thedogapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 > Accept-Encoding: gzip,deflate
+{"image_id":"HkRcZe547"}
+
+03:15:54.341 [main] DEBUG com.intuit.karate - response time in milliseconds: 1298
+1 < 200
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < vary: Origin
+1 < retry-after-seconds: 0.401
+1 < ratelimit-limit: 120
+1 < ratelimit-remaining: 115
+1 < ratelimit-consumed: 5
+1 < ratelimit-reset: 2023-03-17T01:15:55.601Z
+1 < content-type: application/json; charset=utf-8
+1 < x-response-time: 191ms
+1 < X-Cloud-Trace-Context: 96384497b85859dbf0106c73e3e0495b
+1 < Date: Fri, 17 Mar 2023 01:15:55 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 32
+{"message":"SUCCESS","id":71115}
+03:15:54.348 [main] INFO  com.intuit.karate - Response: {
+  "message": "SUCCESS",
+  "id": 71115
+}
+ 
+03:15:54.353 [main] INFO  com.intuit.karate - created dog saved! 
+03:15:54.362 [main] INFO  com.intuit.karate - karate.env system property was: null 
+03:15:54.367 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.thedogapi.com/v1/favorites
+1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 > 'Content-Type': application/json
+1 > Host: api.thedogapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 > Accept-Encoding: gzip,deflate
+
+
+03:15:55.162 [main] DEBUG com.intuit.karate - response time in milliseconds: 795
+1 < 411
+1 < Content-Type: text/html; charset=UTF-8
+1 < Referrer-Policy: no-referrer
+1 < Content-Length: 1564
+1 < Date: Fri, 17 Mar 2023 01:15:56 GMT
+1 < X-Google-GFE-Backend-Request-Cost: 23.092564239999298
+1 < X-Google-GFE-Load-Report: utilization_percent: 23.092564 queries_per_second: 6697 errors_per_second: 0
+<!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 411 (Length Required)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>411.</b> <ins>That’s an error.</ins>
+  <p>POST requests require a <code>Content-length</code> header.  <ins>That’s all we know.</ins>
+
+03:15:55.168 [main] ERROR com.intuit.karate - classpath:favourites/favs/favs.feature:42
+Then status 200
+status code was: 411, expected: 200, response time in milliseconds: 795, url: https://api.thedogapi.com/v1/favorites, response: 
+<!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 411 (Length Required)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>411.</b> <ins>That’s an error.</ins>
+  <p>POST requests require a <code>Content-length</code> header.  <ins>That’s all we know.</ins>
+
+classpath:favourites/favs/favs.feature:42
+03:15:55.189 [main] INFO  com.intuit.karate - karate.env system property was: null 
+03:15:55.193 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://api.thedogapi.com/v1/favourites/1
+1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 > 'Content-Type': application/json
+1 > Host: api.thedogapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 > Accept-Encoding: gzip,deflate
+
+
+03:15:56.182 [main] DEBUG com.intuit.karate - response time in milliseconds: 988
+1 < 400
+1 < content-type: text/plain; charset=utf-8
+1 < X-Cloud-Trace-Context: 9d42d65c5e480a01124072674a520a6d
+1 < Date: Fri, 17 Mar 2023 01:15:57 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 15
+INVALID_ACCOUNT
+03:15:56.185 [main] INFO  com.intuit.karate - Response: INVALID_ACCOUNT 
+03:16:59.814 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+03:17:01.020 [main] INFO  com.intuit.karate - karate.env system property was: null 
+03:17:01.645 [main] DEBUG com.intuit.karate - request:
+1 > GET https://api.thedogapi.com/v1/favourites/1
+1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 > 'Content-Type': application/json
+1 > Host: api.thedogapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 > Accept-Encoding: gzip,deflate
+
+
+03:17:03.476 [main] DEBUG com.intuit.karate - response time in milliseconds: 1829
+1 < 200
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < vary: Origin
+1 < retry-after-seconds: 60
+1 < ratelimit-limit: 120
+1 < ratelimit-remaining: 119
+1 < ratelimit-consumed: 1
+1 < ratelimit-reset: 2023-03-17T01:18:04.295Z
+1 < content-type: application/json; charset=utf-8
+1 < x-response-time: 189ms
+1 < X-Cloud-Trace-Context: 8a8d0d298f2632666ecdb28b40d39c5c
+1 < Date: Fri, 17 Mar 2023 01:17:04 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 112
+{"id":1,"user_id":"0","image_id":"0","sub_id":"my-user-1234","created_at":"2018-07-29T11:52:56.000Z","image":{}}
+03:17:03.530 [main] INFO  com.intuit.karate - Response: {
+  "id": 1,
+  "user_id": "0",
+  "image_id": "0",
+  "sub_id": "my-user-1234",
+  "created_at": "2018-07-29T11:52:56.000Z",
+  "image": {
+  }
+}
+ 
+03:17:03.532 [main] INFO  com.intuit.karate - [print] {
+  "id": 1,
+  "user_id": "0",
+  "image_id": "0",
+  "sub_id": "my-user-1234",
+  "created_at": "2018-07-29T11:52:56.000Z",
+  "image": {
+  }
+}
+ 
+03:17:03.547 [main] INFO  com.intuit.karate - karate.env system property was: null 
+03:17:03.588 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.thedogapi.com/v1/favourites
+1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 > 'Content-Type': application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 24
+1 > Host: api.thedogapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 > Accept-Encoding: gzip,deflate
+{"image_id":"HkRcZe547"}
+
+03:17:04.894 [main] DEBUG com.intuit.karate - response time in milliseconds: 1305
+1 < 200
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < vary: Origin
+1 < retry-after-seconds: 58.33
+1 < ratelimit-limit: 120
+1 < ratelimit-remaining: 118
+1 < ratelimit-consumed: 2
+1 < ratelimit-reset: 2023-03-17T01:18:04.298Z
+1 < content-type: application/json; charset=utf-8
+1 < x-response-time: 209ms
+1 < X-Cloud-Trace-Context: 700768f51707780e912615f8fac2b175
+1 < Date: Fri, 17 Mar 2023 01:17:06 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 32
+{"message":"SUCCESS","id":71117}
+03:17:04.900 [main] INFO  com.intuit.karate - Response: {
+  "message": "SUCCESS",
+  "id": 71117
+}
+ 
+03:17:04.904 [main] INFO  com.intuit.karate - created dog saved! 
+03:17:04.917 [main] INFO  com.intuit.karate - karate.env system property was: null 
+03:17:04.921 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.thedogapi.com/v1/favorites
+1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 > 'Content-Type': application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 49
+1 > Host: api.thedogapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 > Accept-Encoding: gzip,deflate
+{"image_id":"Thapelo123","sub_id":"this-is-1234"}
+
+03:17:06.018 [main] DEBUG com.intuit.karate - response time in milliseconds: 1097
+1 < 404
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < x-response-time: 1ms
+1 < X-Cloud-Trace-Context: 762afdea1035c5fed8e2459a6d78abd7
+1 < Date: Fri, 17 Mar 2023 01:17:07 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 105
+{"message":"404 - please consult the documentation for correct url to call. https://docs.thedogapi.com/"}
+03:17:06.024 [main] ERROR com.intuit.karate - classpath:favourites/favs/favs.feature:43
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 1097, url: https://api.thedogapi.com/v1/favorites, response: 
+{"message":"404 - please consult the documentation for correct url to call. https://docs.thedogapi.com/"}
+classpath:favourites/favs/favs.feature:43
+03:17:06.050 [main] INFO  com.intuit.karate - karate.env system property was: null 
+03:17:06.056 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://api.thedogapi.com/v1/favourites/1
+1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 > 'Content-Type': application/json
+1 > Host: api.thedogapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 > Accept-Encoding: gzip,deflate
+
+
+03:17:07.143 [main] DEBUG com.intuit.karate - response time in milliseconds: 1087
+1 < 400
+1 < content-type: text/plain; charset=utf-8
+1 < X-Cloud-Trace-Context: 37ca431514e9de6464d05f3551fb9486
+1 < Date: Fri, 17 Mar 2023 01:17:08 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 15
+INVALID_ACCOUNT
+03:17:07.147 [main] INFO  com.intuit.karate - Response: INVALID_ACCOUNT 
+03:19:09.709 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+03:19:11.042 [main] INFO  com.intuit.karate - karate.env system property was: null 
+03:19:11.680 [main] DEBUG com.intuit.karate - request:
+1 > GET https://api.thedogapi.com/v1/favourites/1
+1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 > 'Content-Type': application/json
+1 > Host: api.thedogapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 > Accept-Encoding: gzip,deflate
+
+
+03:19:13.026 [main] DEBUG com.intuit.karate - response time in milliseconds: 1344
+1 < 200
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < vary: Origin
+1 < retry-after-seconds: 60
+1 < ratelimit-limit: 120
+1 < ratelimit-remaining: 119
+1 < ratelimit-consumed: 1
+1 < ratelimit-reset: 2023-03-17T01:20:14.090Z
+1 < content-type: application/json; charset=utf-8
+1 < x-response-time: 225ms
+1 < X-Cloud-Trace-Context: 6e5992ce0a377b0db4a194cf5844fd90
+1 < Date: Fri, 17 Mar 2023 01:19:14 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 112
+{"id":1,"user_id":"0","image_id":"0","sub_id":"my-user-1234","created_at":"2018-07-29T11:52:56.000Z","image":{}}
+03:19:13.086 [main] INFO  com.intuit.karate - Response: {
+  "id": 1,
+  "user_id": "0",
+  "image_id": "0",
+  "sub_id": "my-user-1234",
+  "created_at": "2018-07-29T11:52:56.000Z",
+  "image": {
+  }
+}
+ 
+03:19:13.088 [main] INFO  com.intuit.karate - [print] {
+  "id": 1,
+  "user_id": "0",
+  "image_id": "0",
+  "sub_id": "my-user-1234",
+  "created_at": "2018-07-29T11:52:56.000Z",
+  "image": {
+  }
+}
+ 
+03:19:13.104 [main] INFO  com.intuit.karate - karate.env system property was: null 
+03:19:13.144 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.thedogapi.com/v1/favourites
+1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 > 'Content-Type': application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 24
+1 > Host: api.thedogapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 > Accept-Encoding: gzip,deflate
+{"image_id":"HkRcZe547"}
+
+03:19:14.328 [main] DEBUG com.intuit.karate - response time in milliseconds: 1184
+1 < 200
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < vary: Origin
+1 < retry-after-seconds: 58.692
+1 < ratelimit-limit: 120
+1 < ratelimit-remaining: 118
+1 < ratelimit-consumed: 2
+1 < ratelimit-reset: 2023-03-17T01:20:14.090Z
+1 < content-type: application/json; charset=utf-8
+1 < x-response-time: 203ms
+1 < X-Cloud-Trace-Context: d6f67f00745b6d1b7550ad2da956b8a6
+1 < Date: Fri, 17 Mar 2023 01:19:15 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 32
+{"message":"SUCCESS","id":71118}
+03:19:14.337 [main] INFO  com.intuit.karate - Response: {
+  "message": "SUCCESS",
+  "id": 71118
+}
+ 
+03:19:14.341 [main] INFO  com.intuit.karate - created dog saved! 
+03:19:14.351 [main] INFO  com.intuit.karate - karate.env system property was: null 
+03:19:14.355 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.thedogapi.com/v1/favorites
+1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 > 'Content-Type': application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 49
+1 > Host: api.thedogapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 > Accept-Encoding: gzip,deflate
+{"image_id":"Thapelo123","sub_id":"this-is-1234"}
+
+03:19:15.351 [main] DEBUG com.intuit.karate - response time in milliseconds: 995
+1 < 404
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < x-response-time: 1ms
+1 < X-Cloud-Trace-Context: 5edb165979211002d507ab55bf61ac1e
+1 < Date: Fri, 17 Mar 2023 01:19:16 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 105
+{"message":"404 - please consult the documentation for correct url to call. https://docs.thedogapi.com/"}
+03:19:15.354 [main] ERROR com.intuit.karate - classpath:favourites/favs/favs.feature:43
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 995, url: https://api.thedogapi.com/v1/favorites, response: 
+{"message":"404 - please consult the documentation for correct url to call. https://docs.thedogapi.com/"}
+classpath:favourites/favs/favs.feature:43
+03:19:15.382 [main] INFO  com.intuit.karate - karate.env system property was: null 
+03:19:15.387 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://api.thedogapi.com/v1/favourites/1
+1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 > 'Content-Type': application/json
+1 > Host: api.thedogapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 > Accept-Encoding: gzip,deflate
+
+
+03:19:16.394 [main] DEBUG com.intuit.karate - response time in milliseconds: 1006
+1 < 400
+1 < content-type: text/plain; charset=utf-8
+1 < X-Cloud-Trace-Context: 963e7b0e83d23207a30bdc2224f09e70;o=1
+1 < Date: Fri, 17 Mar 2023 01:19:17 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 15
+INVALID_ACCOUNT
+03:19:16.397 [main] INFO  com.intuit.karate - Response: INVALID_ACCOUNT 
+03:21:25.850 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+03:21:27.077 [main] INFO  com.intuit.karate - karate.env system property was: null 
+03:21:27.700 [main] DEBUG com.intuit.karate - request:
+1 > GET https://api.thedogapi.com/v1/favourites/1
+1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 > 'Content-Type': application/json
+1 > Host: api.thedogapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 > Accept-Encoding: gzip,deflate
+
+
+03:21:29.403 [main] DEBUG com.intuit.karate - response time in milliseconds: 1700
+1 < 200
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < vary: Origin
+1 < retry-after-seconds: 60
+1 < ratelimit-limit: 120
+1 < ratelimit-remaining: 119
+1 < ratelimit-consumed: 1
+1 < ratelimit-reset: 2023-03-17T01:22:30.471Z
+1 < content-type: application/json; charset=utf-8
+1 < x-response-time: 191ms
+1 < X-Cloud-Trace-Context: 156f05e42309a43fcad5b8cf065a61f8
+1 < Date: Fri, 17 Mar 2023 01:21:30 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 112
+{"id":1,"user_id":"0","image_id":"0","sub_id":"my-user-1234","created_at":"2018-07-29T11:52:56.000Z","image":{}}
+03:21:29.457 [main] INFO  com.intuit.karate - Response: {
+  "id": 1,
+  "user_id": "0",
+  "image_id": "0",
+  "sub_id": "my-user-1234",
+  "created_at": "2018-07-29T11:52:56.000Z",
+  "image": {
+  }
+}
+ 
+03:21:29.460 [main] INFO  com.intuit.karate - [print] {
+  "id": 1,
+  "user_id": "0",
+  "image_id": "0",
+  "sub_id": "my-user-1234",
+  "created_at": "2018-07-29T11:52:56.000Z",
+  "image": {
+  }
+}
+ 
+03:21:29.478 [main] INFO  com.intuit.karate - karate.env system property was: null 
+03:21:29.528 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.thedogapi.com/v1/favourites
+1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 > 'Content-Type': application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 24
+1 > Host: api.thedogapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 > Accept-Encoding: gzip,deflate
+{"image_id":"HkRcZe547"}
+
+03:21:30.923 [main] DEBUG com.intuit.karate - response time in milliseconds: 1395
+1 < 200
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < vary: Origin
+1 < retry-after-seconds: 58.683
+1 < ratelimit-limit: 120
+1 < ratelimit-remaining: 118
+1 < ratelimit-consumed: 2
+1 < ratelimit-reset: 2023-03-17T01:22:30.471Z
+1 < content-type: application/json; charset=utf-8
+1 < x-response-time: 206ms
+1 < X-Cloud-Trace-Context: c6df9a854d1ae09a993b56da726e0076
+1 < Date: Fri, 17 Mar 2023 01:21:31 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 32
+{"message":"SUCCESS","id":71119}
+03:21:30.936 [main] INFO  com.intuit.karate - Response: {
+  "message": "SUCCESS",
+  "id": 71119
+}
+ 
+03:21:30.940 [main] INFO  com.intuit.karate - created dog saved! 
+03:21:30.947 [main] INFO  com.intuit.karate - karate.env system property was: null 
+03:21:30.950 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.thedogapi.com/v1/favorites
+1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 > 'Content-Type': application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 49
+1 > Host: api.thedogapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 > Accept-Encoding: gzip,deflate
+{"image_id":"Thapelo123","sub_id":"my-user-1234"}
+
+03:21:31.949 [main] DEBUG com.intuit.karate - response time in milliseconds: 999
+1 < 404
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < x-response-time: 2ms
+1 < X-Cloud-Trace-Context: 37032335a5c15e46d9825e6645840b28
+1 < Date: Fri, 17 Mar 2023 01:21:33 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 105
+{"message":"404 - please consult the documentation for correct url to call. https://docs.thedogapi.com/"}
+03:21:31.953 [main] ERROR com.intuit.karate - classpath:favourites/favs/favs.feature:43
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 999, url: https://api.thedogapi.com/v1/favorites, response: 
+{"message":"404 - please consult the documentation for correct url to call. https://docs.thedogapi.com/"}
+classpath:favourites/favs/favs.feature:43
+03:21:31.980 [main] INFO  com.intuit.karate - karate.env system property was: null 
+03:21:31.984 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://api.thedogapi.com/v1/favourites/1
+1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 > 'Content-Type': application/json
+1 > Host: api.thedogapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 > Accept-Encoding: gzip,deflate
+
+
+03:21:33.173 [main] DEBUG com.intuit.karate - response time in milliseconds: 1189
+1 < 400
+1 < content-type: text/plain; charset=utf-8
+1 < X-Cloud-Trace-Context: 4482651d9c7a6463df9f986dcbf0da7f
+1 < Date: Fri, 17 Mar 2023 01:21:34 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 15
+INVALID_ACCOUNT
+03:21:33.175 [main] INFO  com.intuit.karate - Response: INVALID_ACCOUNT 
+03:33:35.574 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+03:33:36.846 [main] INFO  com.intuit.karate - karate.env system property was: null 
+03:33:37.533 [main] DEBUG com.intuit.karate - request:
+1 > GET https://api.thedogapi.com/v1/categories
+1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 > 'Content-Type': application/json
+1 > Host: api.thedogapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 > Accept-Encoding: gzip,deflate
+
+
+03:33:38.991 [main] DEBUG com.intuit.karate - response time in milliseconds: 1455
+1 < 200
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < vary: Origin
+1 < pagination-count: 0
+1 < pagination-page: 0
+1 < pagination-limit: 1000
+1 < access-control-expose-headers: Pagination-Count, Pagination-Page, Pagination-Limit
+1 < cache-control: public, max-age=12800
+1 < content-type: application/json; charset=utf-8
+1 < x-response-time: 67ms
+1 < X-Cloud-Trace-Context: 76c8052774673c2e49e0cde60ecdb4b9
+1 < Date: Fri, 17 Mar 2023 01:33:40 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 2
+[]
+03:33:39.055 [main] ERROR com.intuit.karate - classpath:categories/cats/cats.feature:12
+And match response.message == 'thecatapi-service'
+match failed: EQUALS
+  $ | actual path does not exist (STRING:STRING)
+  '#notpresent'
+  'thecatapi-service'
+
+classpath:categories/cats/cats.feature:12
+03:34:38.696 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+03:34:39.929 [main] INFO  com.intuit.karate - karate.env system property was: null 
+03:34:40.568 [main] DEBUG com.intuit.karate - request:
+1 > GET https://api.thedogapi.com/v1/categories
+1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 > 'Content-Type': application/json
+1 > Host: api.thedogapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 > Accept-Encoding: gzip,deflate
+
+
+03:34:42.067 [main] DEBUG com.intuit.karate - response time in milliseconds: 1497
+1 < 200
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < vary: Origin
+1 < pagination-count: 0
+1 < pagination-page: 0
+1 < pagination-limit: 1000
+1 < access-control-expose-headers: Pagination-Count, Pagination-Page, Pagination-Limit
+1 < cache-control: public, max-age=12800
+1 < content-type: application/json; charset=utf-8
+1 < x-response-time: 68ms
+1 < X-Cloud-Trace-Context: d6d90d091775d94a3e08f68ff7709d22
+1 < Date: Fri, 17 Mar 2023 01:34:43 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 2
+[]
+03:34:42.129 [main] ERROR com.intuit.karate - classpath:categories/cats/cats.feature:12
+And match response.message == 'thecatapi-service'
+match failed: EQUALS
+  $ | actual path does not exist (STRING:STRING)
+  '#notpresent'
+  'thecatapi-service'
+
+classpath:categories/cats/cats.feature:12
+03:36:40.203 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+03:36:41.482 [main] INFO  com.intuit.karate - karate.env system property was: null 
+03:36:42.190 [main] DEBUG com.intuit.karate - request:
+1 > GET https://api.thedogapi.com/v1/categories
+1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 > 'Content-Type': application/json
+1 > Host: api.thedogapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 > Accept-Encoding: gzip,deflate
+
+
+03:36:43.614 [main] DEBUG com.intuit.karate - response time in milliseconds: 1421
+1 < 200
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < vary: Origin
+1 < pagination-count: 0
+1 < pagination-page: 0
+1 < pagination-limit: 1000
+1 < access-control-expose-headers: Pagination-Count, Pagination-Page, Pagination-Limit
+1 < cache-control: public, max-age=12800
+1 < content-type: application/json; charset=utf-8
+1 < x-response-time: 65ms
+1 < X-Cloud-Trace-Context: 33f6e9bc4c47420c9ceaec392e113783;o=1
+1 < Date: Fri, 17 Mar 2023 01:36:44 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 2
+[]
+03:36:43.668 [main] ERROR com.intuit.karate - classpath:categories/cats/cats.feature:12
+And match response.message == 'thecatapi-service'
+match failed: EQUALS
+  $ | actual path does not exist (STRING:STRING)
+  '#notpresent'
+  'thecatapi-service'
+
+classpath:categories/cats/cats.feature:12
+03:37:31.837 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+03:37:33.026 [main] INFO  com.intuit.karate - karate.env system property was: null 
+03:37:33.674 [main] DEBUG com.intuit.karate - request:
+1 > GET https://api.thedogapi.com/v1/categories
+1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 > 'Content-Type': application/json
+1 > Host: api.thedogapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 > Accept-Encoding: gzip,deflate
+
+
+03:37:35.018 [main] DEBUG com.intuit.karate - response time in milliseconds: 1339
+1 < 200
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < vary: Origin
+1 < pagination-count: 0
+1 < pagination-page: 0
+1 < pagination-limit: 1000
+1 < access-control-expose-headers: Pagination-Count, Pagination-Page, Pagination-Limit
+1 < cache-control: public, max-age=12800
+1 < content-type: application/json; charset=utf-8
+1 < x-response-time: 67ms
+1 < X-Cloud-Trace-Context: ff558ce1f48917e17d34c9c036883881
+1 < Date: Fri, 17 Mar 2023 01:37:36 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 2
+[]
+03:39:37.306 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+03:39:37.310 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1679017177310
+03:39:38.190 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+03:39:38.740 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://api.thedogapi.com/v1/categories
+1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 > 'Content-Type': application/json
+1 > Host: api.thedogapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 > Accept-Encoding: gzip,deflate
+
+
+03:39:40.143 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1400
+1 < 200
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < vary: Origin
+1 < pagination-count: 0
+1 < pagination-page: 0
+1 < pagination-limit: 1000
+1 < access-control-expose-headers: Pagination-Count, Pagination-Page, Pagination-Limit
+1 < cache-control: public, max-age=12800
+1 < content-type: application/json; charset=utf-8
+1 < x-response-time: 65ms
+1 < X-Cloud-Trace-Context: b0a58c399c5bd3b84148c4bfb999be60;o=1
+1 < Date: Fri, 17 Mar 2023 01:39:37 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 2
+[]
+03:39:40.211 [pool-1-thread-1] ERROR com.intuit.karate - classpath:categories/cats/cats.feature:12
+And match response.message == 'thecatapi-service'
+match failed: EQUALS
+  $ | actual path does not exist (STRING:STRING)
+  '#notpresent'
+  'thecatapi-service'
+
+classpath:categories/cats/cats.feature:12
+03:39:40.697 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:categories/cats/cats.feature
+03:39:41.080 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+03:39:41.081 [main] WARN  com.intuit.karate.Suite - failed to backup existing dir: target\karate-reports
+03:39:41.100 [pool-3-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+03:39:41.101 [pool-3-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+03:39:41.103 [pool-3-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+03:39:41.103 [pool-3-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+03:39:41.107 [pool-3-thread-4] DEBUG com.intuit.karate - request:
+1 > DELETE https://api.thedogapi.com/v1/favourites/1
+1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 > 'Content-Type': application/json
+1 > Host: api.thedogapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 > Accept-Encoding: gzip,deflate
+
+
+03:39:41.111 [pool-3-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://api.thedogapi.com/v1/favourites/1
+1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 > 'Content-Type': application/json
+1 > Host: api.thedogapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 > Accept-Encoding: gzip,deflate
+
+
+03:39:41.148 [pool-3-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://api.thedogapi.com/v1/favorites
+1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 > 'Content-Type': application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 49
+1 > Host: api.thedogapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 > Accept-Encoding: gzip,deflate
+{"image_id":"Thapelo123","sub_id":"my-user-1234"}
+
+03:39:41.148 [pool-3-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://api.thedogapi.com/v1/favourites
+1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 > 'Content-Type': application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 24
+1 > Host: api.thedogapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 > Accept-Encoding: gzip,deflate
+{"image_id":"HkRcZe547"}
+
+03:39:42.179 [pool-3-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 1029
+1 < 404
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < x-response-time: 1ms
+1 < X-Cloud-Trace-Context: 4cb906bac788d5e4d671db563a478144
+1 < Date: Fri, 17 Mar 2023 01:39:39 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 105
+{"message":"404 - please consult the documentation for correct url to call. https://docs.thedogapi.com/"}
+03:39:42.180 [pool-3-thread-3] ERROR com.intuit.karate - classpath:favourites/favs/favs.feature:42
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 1029, url: https://api.thedogapi.com/v1/favorites, response: 
+{"message":"404 - please consult the documentation for correct url to call. https://docs.thedogapi.com/"}
+classpath:favourites/favs/favs.feature:42
+03:39:42.229 [pool-3-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 1118
+1 < 400
+1 < content-type: text/plain; charset=utf-8
+1 < X-Cloud-Trace-Context: eacf9b6b86460f35a17ecdbb0a312f19
+1 < Date: Fri, 17 Mar 2023 01:39:40 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 15
+INVALID_ACCOUNT
+03:39:42.232 [pool-3-thread-4] INFO  com.intuit.karate - Response: INVALID_ACCOUNT 
+03:39:42.365 [pool-3-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 1216
+1 < 200
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < vary: Origin
+1 < retry-after-seconds: 59.983
+1 < ratelimit-limit: 120
+1 < ratelimit-remaining: 117
+1 < ratelimit-consumed: 3
+1 < ratelimit-reset: 2023-03-17T01:40:40.019Z
+1 < content-type: application/json; charset=utf-8
+1 < x-response-time: 290ms
+1 < X-Cloud-Trace-Context: 0b7cbb46baf7fcbef18c794b9115b938
+1 < Date: Fri, 17 Mar 2023 01:39:40 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 32
+{"message":"SUCCESS","id":71121}
+03:39:42.375 [pool-3-thread-2] INFO  com.intuit.karate - Response: {
+  "message": "SUCCESS",
+  "id": 71121
+}
+ 
+03:39:42.379 [pool-3-thread-2] INFO  com.intuit.karate - created dog saved! 
+03:39:42.421 [pool-3-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1310
+1 < 200
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < vary: Origin
+1 < retry-after-seconds: 59.998
+1 < ratelimit-limit: 120
+1 < ratelimit-remaining: 118
+1 < ratelimit-consumed: 2
+1 < ratelimit-reset: 2023-03-17T01:40:40.031Z
+1 < content-type: application/json; charset=utf-8
+1 < x-response-time: 343ms
+1 < X-Cloud-Trace-Context: 461a11c0bc92868de2f66b91103e1a6a
+1 < Date: Fri, 17 Mar 2023 01:39:40 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 112
+{"id":1,"user_id":"0","image_id":"0","sub_id":"my-user-1234","created_at":"2018-07-29T11:52:56.000Z","image":{}}
+03:39:42.431 [pool-3-thread-1] INFO  com.intuit.karate - Response: {
+  "id": 1,
+  "user_id": "0",
+  "image_id": "0",
+  "sub_id": "my-user-1234",
+  "created_at": "2018-07-29T11:52:56.000Z",
+  "image": {
+  }
+}
+ 
+03:39:42.434 [pool-3-thread-1] INFO  com.intuit.karate - [print] {
+  "id": 1,
+  "user_id": "0",
+  "image_id": "0",
+  "sub_id": "my-user-1234",
+  "created_at": "2018-07-29T11:52:56.000Z",
+  "image": {
+  }
+}
+ 
+03:39:42.622 [pool-4-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:favourites/favs/favs.feature
+03:39:59.391 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+03:40:00.601 [main] INFO  com.intuit.karate - karate.env system property was: null 
+03:40:01.294 [main] DEBUG com.intuit.karate - request:
+1 > GET https://api.thedogapi.com/v1/favourites/1
+1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 > 'Content-Type': application/json
+1 > Host: api.thedogapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 > Accept-Encoding: gzip,deflate
+
+
+03:40:02.669 [main] DEBUG com.intuit.karate - response time in milliseconds: 1371
+1 < 200
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < vary: Origin
+1 < retry-after-seconds: 39.732
+1 < ratelimit-limit: 120
+1 < ratelimit-remaining: 116
+1 < ratelimit-consumed: 4
+1 < ratelimit-reset: 2023-03-17T01:40:40.021Z
+1 < content-type: application/json; charset=utf-8
+1 < x-response-time: 201ms
+1 < X-Cloud-Trace-Context: f0617138ee6acb65bf0ddb3e53cb855b;o=1
+1 < Date: Fri, 17 Mar 2023 01:40:00 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 112
+{"id":1,"user_id":"0","image_id":"0","sub_id":"my-user-1234","created_at":"2018-07-29T11:52:56.000Z","image":{}}
+03:40:02.732 [main] INFO  com.intuit.karate - Response: {
+  "id": 1,
+  "user_id": "0",
+  "image_id": "0",
+  "sub_id": "my-user-1234",
+  "created_at": "2018-07-29T11:52:56.000Z",
+  "image": {
+  }
+}
+ 
+03:40:02.734 [main] INFO  com.intuit.karate - [print] {
+  "id": 1,
+  "user_id": "0",
+  "image_id": "0",
+  "sub_id": "my-user-1234",
+  "created_at": "2018-07-29T11:52:56.000Z",
+  "image": {
+  }
+}
+ 
+03:40:02.754 [main] INFO  com.intuit.karate - karate.env system property was: null 
+03:40:02.801 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.thedogapi.com/v1/favourites
+1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 > 'Content-Type': application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 24
+1 > Host: api.thedogapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 > Accept-Encoding: gzip,deflate
+{"image_id":"HkRcZe547"}
+
+03:40:04.094 [main] DEBUG com.intuit.karate - response time in milliseconds: 1292
+1 < 200
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < vary: Origin
+1 < retry-after-seconds: 38.405
+1 < ratelimit-limit: 120
+1 < ratelimit-remaining: 115
+1 < ratelimit-consumed: 5
+1 < ratelimit-reset: 2023-03-17T01:40:40.018Z
+1 < content-type: application/json; charset=utf-8
+1 < x-response-time: 206ms
+1 < X-Cloud-Trace-Context: 6c13364433d9ae49ebbb59000d345331
+1 < Date: Fri, 17 Mar 2023 01:40:01 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 32
+{"message":"SUCCESS","id":71122}
+03:40:04.103 [main] INFO  com.intuit.karate - Response: {
+  "message": "SUCCESS",
+  "id": 71122
+}
+ 
+03:40:04.107 [main] INFO  com.intuit.karate - created dog saved! 
+03:40:04.115 [main] INFO  com.intuit.karate - karate.env system property was: null 
+03:40:04.119 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.thedogapi.com/v1/favorites
+1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 > 'Content-Type': application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 49
+1 > Host: api.thedogapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 > Accept-Encoding: gzip,deflate
+{"image_id":"Thapelo123","sub_id":"my-user-1234"}
+
+03:40:05.220 [main] DEBUG com.intuit.karate - response time in milliseconds: 1099
+1 < 404
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < x-response-time: 1ms
+1 < X-Cloud-Trace-Context: fe290513bd945d968591c76ca9703ec2
+1 < Date: Fri, 17 Mar 2023 01:40:03 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 105
+{"message":"404 - please consult the documentation for correct url to call. https://docs.thedogapi.com/"}
+03:40:05.224 [main] ERROR com.intuit.karate - classpath:favourites/favs/favs.feature:42
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 1099, url: https://api.thedogapi.com/v1/favorites, response: 
+{"message":"404 - please consult the documentation for correct url to call. https://docs.thedogapi.com/"}
+classpath:favourites/favs/favs.feature:42
+03:40:05.246 [main] INFO  com.intuit.karate - karate.env system property was: null 
+03:40:05.250 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://api.thedogapi.com/v1/favourites/1
+1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 > 'Content-Type': application/json
+1 > Host: api.thedogapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 > Accept-Encoding: gzip,deflate
+
+
+03:40:06.551 [main] DEBUG com.intuit.karate - response time in milliseconds: 1301
+1 < 400
+1 < content-type: text/plain; charset=utf-8
+1 < X-Cloud-Trace-Context: 87450e608a309d16d4bb2e174c196074
+1 < Date: Fri, 17 Mar 2023 01:40:04 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 15
+INVALID_ACCOUNT
+03:40:06.555 [main] INFO  com.intuit.karate - Response: INVALID_ACCOUNT 
+03:40:45.373 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+03:40:46.568 [main] INFO  com.intuit.karate - karate.env system property was: null 
+03:40:47.206 [main] DEBUG com.intuit.karate - request:
+1 > GET https://api.thedogapi.com/v1/categories
+1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 > 'Content-Type': application/json
+1 > Host: api.thedogapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 > Accept-Encoding: gzip,deflate
+
+
+03:40:48.551 [main] DEBUG com.intuit.karate - response time in milliseconds: 1341
+1 < 200
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < vary: Origin
+1 < pagination-count: 0
+1 < pagination-page: 0
+1 < pagination-limit: 1000
+1 < access-control-expose-headers: Pagination-Count, Pagination-Page, Pagination-Limit
+1 < cache-control: public, max-age=12800
+1 < content-type: application/json; charset=utf-8
+1 < x-response-time: 67ms
+1 < X-Cloud-Trace-Context: b8aa5e0bc9c4e7cfb53cf4d4a5e09ec8
+1 < Date: Fri, 17 Mar 2023 01:40:46 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 2
+[]
+03:41:39.724 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+03:41:40.949 [main] INFO  com.intuit.karate - karate.env system property was: null 
+03:41:41.550 [main] DEBUG com.intuit.karate - request:
+1 > GET https://api.thedogapi.com/v1/favourites/1
+1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 > 'Content-Type': application/json
+1 > Host: api.thedogapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 > Accept-Encoding: gzip,deflate
+
+
+03:41:43.027 [main] DEBUG com.intuit.karate - response time in milliseconds: 1475
+1 < 200
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < vary: Origin
+1 < retry-after-seconds: 60
+1 < ratelimit-limit: 120
+1 < ratelimit-remaining: 119
+1 < ratelimit-consumed: 1
+1 < ratelimit-reset: 2023-03-17T01:42:40.641Z
+1 < content-type: application/json; charset=utf-8
+1 < x-response-time: 208ms
+1 < X-Cloud-Trace-Context: 0c832cdb0f140840c7c80ad74a52946b
+1 < Date: Fri, 17 Mar 2023 01:41:40 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 112
+{"id":1,"user_id":"0","image_id":"0","sub_id":"my-user-1234","created_at":"2018-07-29T11:52:56.000Z","image":{}}
+03:41:43.081 [main] INFO  com.intuit.karate - Response: {
+  "id": 1,
+  "user_id": "0",
+  "image_id": "0",
+  "sub_id": "my-user-1234",
+  "created_at": "2018-07-29T11:52:56.000Z",
+  "image": {
+  }
+}
+ 
+03:41:43.083 [main] INFO  com.intuit.karate - [print] {
+  "id": 1,
+  "user_id": "0",
+  "image_id": "0",
+  "sub_id": "my-user-1234",
+  "created_at": "2018-07-29T11:52:56.000Z",
+  "image": {
+  }
+}
+ 
+03:41:43.105 [main] INFO  com.intuit.karate - karate.env system property was: null 
+03:41:43.148 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.thedogapi.com/v1/favourites
+1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 > 'Content-Type': application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 24
+1 > Host: api.thedogapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 > Accept-Encoding: gzip,deflate
+{"image_id":"HkRcZe547"}
+
+03:41:44.546 [main] DEBUG com.intuit.karate - response time in milliseconds: 1398
+1 < 200
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < vary: Origin
+1 < retry-after-seconds: 58.683
+1 < ratelimit-limit: 120
+1 < ratelimit-remaining: 118
+1 < ratelimit-consumed: 2
+1 < ratelimit-reset: 2023-03-17T01:42:40.642Z
+1 < content-type: application/json; charset=utf-8
+1 < x-response-time: 208ms
+1 < X-Cloud-Trace-Context: 6696428e11c072fa51ebb4d742371641
+1 < Date: Fri, 17 Mar 2023 01:41:42 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 32
+{"message":"SUCCESS","id":71123}
+03:41:44.552 [main] INFO  com.intuit.karate - Response: {
+  "message": "SUCCESS",
+  "id": 71123
+}
+ 
+03:41:44.556 [main] INFO  com.intuit.karate - created dog saved! 
+03:41:44.568 [main] INFO  com.intuit.karate - karate.env system property was: null 
+03:41:44.571 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.thedogapi.com/v1/favorites
+1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 > 'Content-Type': application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 49
+1 > Host: api.thedogapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 > Accept-Encoding: gzip,deflate
+{"image_id":"Thapelo123","sub_id":"my-user-1234"}
+
+03:41:45.672 [main] DEBUG com.intuit.karate - response time in milliseconds: 1100
+1 < 404
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < x-response-time: 1ms
+1 < X-Cloud-Trace-Context: 6713059f2c9e39f5b58c13e217e527c9
+1 < Date: Fri, 17 Mar 2023 01:41:43 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 105
+{"message":"404 - please consult the documentation for correct url to call. https://docs.thedogapi.com/"}
+03:41:45.674 [main] ERROR com.intuit.karate - classpath:favourites/favs/favs.feature:42
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 1100, url: https://api.thedogapi.com/v1/favorites, response: 
+{"message":"404 - please consult the documentation for correct url to call. https://docs.thedogapi.com/"}
+classpath:favourites/favs/favs.feature:42
+03:41:45.698 [main] INFO  com.intuit.karate - karate.env system property was: null 
+03:41:45.702 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://api.thedogapi.com/v1/favourites/1
+1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
+1 > 'Content-Type': application/json
+1 > Host: api.thedogapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
+1 > Accept-Encoding: gzip,deflate
+
+
+03:41:47.311 [main] DEBUG com.intuit.karate - response time in milliseconds: 1609
+1 < 400
+1 < content-type: text/plain; charset=utf-8
+1 < X-Cloud-Trace-Context: ba48286427d1899d3f4468042f091abf
+1 < Date: Fri, 17 Mar 2023 01:41:45 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 15
+INVALID_ACCOUNT
+03:41:47.315 [main] INFO  com.intuit.karate - Response: INVALID_ACCOUNT 

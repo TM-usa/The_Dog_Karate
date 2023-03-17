@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="favourites.FavouritesTest" time="1.827" tests="1" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="categories.CategoriesTest" time="4.345" tests="1" errors="0" skipped="0" failures="1">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -61,21 +61,21 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="testParallel" classname="favourites.FavouritesTest" time="1.826">
-    <failure message="status code was: 404, expected: 200, response time in milliseconds: 1029, url: https://api.thedogapi.com/v1/favorites, response: &#10;{&quot;message&quot;:&quot;404 - please consult the documentation for correct url to call. https://docs.thedogapi.com/&quot;}&#10;classpath:favourites/favs/favs.feature:42 ==&gt; expected: &lt;0&gt; but was: &lt;1&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
-status code was: 404, expected: 200, response time in milliseconds: 1029, url: https://api.thedogapi.com/v1/favorites, response: 
-{"message":"404 - please consult the documentation for correct url to call. https://docs.thedogapi.com/"}
-classpath:favourites/favs/favs.feature:42 ==> expected: <0> but was: <1>
-	at favourites.FavouritesTest.testParallel(FavouritesTest.java:16)
+  <testcase name="testParallel" classname="categories.CategoriesTest" time="4.341">
+    <failure message="match failed: EQUALS&#10;  $ | actual path does not exist (STRING:STRING)&#10;  &apos;#notpresent&apos;&#10;  &apos;thecatapi-service&apos;&#10;&#10;classpath:categories/cats/cats.feature:12 ==&gt; expected: &lt;0&gt; but was: &lt;1&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+match failed: EQUALS
+  $ | actual path does not exist (STRING:STRING)
+  '#notpresent'
+  'thecatapi-service'
+
+classpath:categories/cats/cats.feature:12 ==> expected: <0> but was: <1>
+	at categories.CategoriesTest.testParallel(CategoriesTest.java:15)
 ]]></failure>
-    <system-out><![CDATA[03:39:41.080 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
-03:39:41.081 [main] WARN  com.intuit.karate.Suite - failed to backup existing dir: target\karate-reports
-03:39:41.100 [pool-3-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
-03:39:41.101 [pool-3-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
-03:39:41.103 [pool-3-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
-03:39:41.103 [pool-3-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
-03:39:41.107 [pool-3-thread-4] DEBUG com.intuit.karate - request:
-1 > DELETE https://api.thedogapi.com/v1/favourites/1
+    <system-out><![CDATA[03:39:37.306 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+03:39:37.310 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1679017177310
+03:39:38.190 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+03:39:38.740 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://api.thedogapi.com/v1/categories
 1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
 1 > 'Content-Type': application/json
 1 > Host: api.thedogapi.com
@@ -84,71 +84,7 @@ classpath:favourites/favs/favs.feature:42 ==> expected: <0> but was: <1>
 1 > Accept-Encoding: gzip,deflate
 
 
-03:39:41.111 [pool-3-thread-1] DEBUG com.intuit.karate - request:
-1 > GET https://api.thedogapi.com/v1/favourites/1
-1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
-1 > 'Content-Type': application/json
-1 > Host: api.thedogapi.com
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
-1 > Accept-Encoding: gzip,deflate
-
-
-03:39:41.148 [pool-3-thread-3] DEBUG com.intuit.karate - request:
-1 > POST https://api.thedogapi.com/v1/favorites
-1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
-1 > 'Content-Type': application/json
-1 > Content-Type: application/json; charset=UTF-8
-1 > Content-Length: 49
-1 > Host: api.thedogapi.com
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
-1 > Accept-Encoding: gzip,deflate
-{"image_id":"Thapelo123","sub_id":"my-user-1234"}
-
-03:39:41.148 [pool-3-thread-2] DEBUG com.intuit.karate - request:
-1 > POST https://api.thedogapi.com/v1/favourites
-1 > x-api-key: live_MZuFF20RpOAJWlFt5JIzSvxBEl2V67khyaEE6EhPeSCEmcypCk1LoOjtBI5WD7UD
-1 > 'Content-Type': application/json
-1 > Content-Type: application/json; charset=UTF-8
-1 > Content-Length: 24
-1 > Host: api.thedogapi.com
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_241)
-1 > Accept-Encoding: gzip,deflate
-{"image_id":"HkRcZe547"}
-
-03:39:42.179 [pool-3-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 1029
-1 < 404
-1 < x-dns-prefetch-control: off
-1 < x-frame-options: SAMEORIGIN
-1 < strict-transport-security: max-age=15552000; includeSubDomains
-1 < x-download-options: noopen
-1 < x-content-type-options: nosniff
-1 < x-xss-protection: 1; mode=block
-1 < vary: Origin
-1 < content-type: application/json; charset=utf-8
-1 < x-response-time: 1ms
-1 < X-Cloud-Trace-Context: 4cb906bac788d5e4d671db563a478144
-1 < Date: Fri, 17 Mar 2023 01:39:39 GMT
-1 < Server: Google Frontend
-1 < Content-Length: 105
-{"message":"404 - please consult the documentation for correct url to call. https://docs.thedogapi.com/"}
-03:39:42.180 [pool-3-thread-3] ERROR com.intuit.karate - classpath:favourites/favs/favs.feature:42
-Then status 200
-status code was: 404, expected: 200, response time in milliseconds: 1029, url: https://api.thedogapi.com/v1/favorites, response: 
-{"message":"404 - please consult the documentation for correct url to call. https://docs.thedogapi.com/"}
-classpath:favourites/favs/favs.feature:42
-03:39:42.229 [pool-3-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 1118
-1 < 400
-1 < content-type: text/plain; charset=utf-8
-1 < X-Cloud-Trace-Context: eacf9b6b86460f35a17ecdbb0a312f19
-1 < Date: Fri, 17 Mar 2023 01:39:40 GMT
-1 < Server: Google Frontend
-1 < Content-Length: 15
-INVALID_ACCOUNT
-03:39:42.232 [pool-3-thread-4] INFO  com.intuit.karate - Response: INVALID_ACCOUNT 
-03:39:42.365 [pool-3-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 1216
+03:39:40.143 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1400
 1 < 200
 1 < x-dns-prefetch-control: off
 1 < x-frame-options: SAMEORIGIN
@@ -157,81 +93,45 @@ INVALID_ACCOUNT
 1 < x-content-type-options: nosniff
 1 < x-xss-protection: 1; mode=block
 1 < vary: Origin
-1 < retry-after-seconds: 59.983
-1 < ratelimit-limit: 120
-1 < ratelimit-remaining: 117
-1 < ratelimit-consumed: 3
-1 < ratelimit-reset: 2023-03-17T01:40:40.019Z
+1 < pagination-count: 0
+1 < pagination-page: 0
+1 < pagination-limit: 1000
+1 < access-control-expose-headers: Pagination-Count, Pagination-Page, Pagination-Limit
+1 < cache-control: public, max-age=12800
 1 < content-type: application/json; charset=utf-8
-1 < x-response-time: 290ms
-1 < X-Cloud-Trace-Context: 0b7cbb46baf7fcbef18c794b9115b938
-1 < Date: Fri, 17 Mar 2023 01:39:40 GMT
+1 < x-response-time: 65ms
+1 < X-Cloud-Trace-Context: b0a58c399c5bd3b84148c4bfb999be60;o=1
+1 < Date: Fri, 17 Mar 2023 01:39:37 GMT
 1 < Server: Google Frontend
-1 < Content-Length: 32
-{"message":"SUCCESS","id":71121}
-03:39:42.375 [pool-3-thread-2] INFO  com.intuit.karate - Response: {
-  "message": "SUCCESS",
-  "id": 71121
-}
- 
-03:39:42.379 [pool-3-thread-2] INFO  com.intuit.karate - created dog saved! 
-03:39:42.421 [pool-3-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1310
-1 < 200
-1 < x-dns-prefetch-control: off
-1 < x-frame-options: SAMEORIGIN
-1 < strict-transport-security: max-age=15552000; includeSubDomains
-1 < x-download-options: noopen
-1 < x-content-type-options: nosniff
-1 < x-xss-protection: 1; mode=block
-1 < vary: Origin
-1 < retry-after-seconds: 59.998
-1 < ratelimit-limit: 120
-1 < ratelimit-remaining: 118
-1 < ratelimit-consumed: 2
-1 < ratelimit-reset: 2023-03-17T01:40:40.031Z
-1 < content-type: application/json; charset=utf-8
-1 < x-response-time: 343ms
-1 < X-Cloud-Trace-Context: 461a11c0bc92868de2f66b91103e1a6a
-1 < Date: Fri, 17 Mar 2023 01:39:40 GMT
-1 < Server: Google Frontend
-1 < Content-Length: 112
-{"id":1,"user_id":"0","image_id":"0","sub_id":"my-user-1234","created_at":"2018-07-29T11:52:56.000Z","image":{}}
-03:39:42.431 [pool-3-thread-1] INFO  com.intuit.karate - Response: {
-  "id": 1,
-  "user_id": "0",
-  "image_id": "0",
-  "sub_id": "my-user-1234",
-  "created_at": "2018-07-29T11:52:56.000Z",
-  "image": {
-  }
-}
- 
-03:39:42.434 [pool-3-thread-1] INFO  com.intuit.karate - [print] {
-  "id": 1,
-  "user_id": "0",
-  "image_id": "0",
-  "sub_id": "my-user-1234",
-  "created_at": "2018-07-29T11:52:56.000Z",
-  "image": {
-  }
-}
- 
+1 < Content-Length: 2
+[]
+03:39:40.211 [pool-1-thread-1] ERROR com.intuit.karate - classpath:categories/cats/cats.feature:12
+And match response.message == 'thecatapi-service'
+match failed: EQUALS
+  $ | actual path does not exist (STRING:STRING)
+  '#notpresent'
+  'thecatapi-service'
+
+classpath:categories/cats/cats.feature:12
 ---------------------------------------------------------
-feature: classpath:favourites/favs/favs.feature
-scenarios:  4 | passed:  3 | failed:  1 | time: 4.8120
+feature: classpath:categories/cats/cats.feature
+scenarios:  1 | passed:  0 | failed:  1 | time: 1.9860
 ---------------------------------------------------------
 
-03:39:42.622 [pool-4-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:favourites/favs/favs.feature
+03:39:40.697 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:categories/cats/cats.feature
 Karate version: 1.1.0
 ======================================================
-elapsed:   1.80 | threads:    5 | thread time: 4.81 
-features:     1 | skipped:    0 | efficiency: 0.54
-scenarios:    4 | passed:     3 | failed: 1
+elapsed:   4.07 | threads:    5 | thread time: 1.99 
+features:     1 | skipped:    0 | efficiency: 0.10
+scenarios:    1 | passed:     0 | failed: 1
 ======================================================
 >>> failed features:
-status code was: 404, expected: 200, response time in milliseconds: 1029, url: https://api.thedogapi.com/v1/favorites, response: 
-{"message":"404 - please consult the documentation for correct url to call. https://docs.thedogapi.com/"}
-classpath:favourites/favs/favs.feature:42
+match failed: EQUALS
+  $ | actual path does not exist (STRING:STRING)
+  '#notpresent'
+  'thecatapi-service'
+
+classpath:categories/cats/cats.feature:12
 <<<
 
 HTML report: (paste into browser to view) | Karate version: 1.1.0

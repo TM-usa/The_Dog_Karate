@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5538ab66-64ee-4ad2-9db7-7bdf6888d63f" name="Default Changelist" comment="" />
+    <list default="true" id="5538ab66-64ee-4ad2-9db7-7bdf6888d63f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/favourites/favs/favs.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/favourites/favs/favs.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/favourites.favs.favs.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/favourites.favs.favs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/favourites.favs.favs.karate-json.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/favourites.favs.favs.karate-json.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-summary-json.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/karate-summary-json.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/karate-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/karate-tags.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate-reports/karate-timeline.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate-reports/karate-timeline.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-favourites.FavouritesTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-favourites.FavouritesTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/favourites.FavouritesTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/favourites.FavouritesTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/favourites/favs/favs.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/favourites/favs/favs.feature" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +30,13 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="2N7MzpfgBpgKJjIPs794DVmiZs7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -23,6 +44,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -46,21 +68,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExamplesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="The_Dog_Karate" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="examples.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="examples" />
-      <option name="MAIN_CLASS_NAME" value="examples.ExamplesTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="FavsRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="The_Dog_Karate" />
       <extension name="coverage">
@@ -76,7 +83,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UsersRunner.testUsers (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FavsRunner.testFavs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="The_Dog_Karate" />
       <extension name="coverage">
         <pattern>
@@ -85,9 +92,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="favourites.favs" />
-      <option name="MAIN_CLASS_NAME" value="favourites.favs.UsersRunner" />
-      <option name="METHOD_NAME" value="testUsers" />
+      <option name="MAIN_CLASS_NAME" value="favourites.favs.FavsRunner" />
+      <option name="METHOD_NAME" value="testFavs" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="catsRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="The_Dog_Karate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="categories.cats.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="categories.cats" />
+      <option name="MAIN_CLASS_NAME" value="categories.cats.catsRunner" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -157,10 +179,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.FavsRunner" />
+        <item itemvalue="JUnit.catsRunner" />
+        <item itemvalue="JUnit.FavsRunner.testFavs" />
         <item itemvalue="JUnit.favsRunner" />
         <item itemvalue="JUnit.ExamplesTest (1)" />
-        <item itemvalue="JUnit.UsersRunner.testUsers (1)" />
-        <item itemvalue="JUnit.ExamplesTest" />
       </list>
     </recent_temporary>
   </component>
@@ -182,22 +204,22 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser/0.0.1536.816@0.0.1536.816" timestamp="1679013571916" />
-    <state width="1493" height="208" key="GridCell.Tab.0.bottom" timestamp="1679014031012">
+    <state width="1493" height="208" key="GridCell.Tab.0.bottom" timestamp="1679017340172">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1679014031012" />
-    <state width="1493" height="208" key="GridCell.Tab.0.center" timestamp="1679014031012">
+    <state width="1493" height="208" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1679017340172" />
+    <state width="1493" height="208" key="GridCell.Tab.0.center" timestamp="1679017340172">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1679014031012" />
-    <state width="1493" height="208" key="GridCell.Tab.0.left" timestamp="1679014031012">
+    <state width="1493" height="208" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1679017340172" />
+    <state width="1493" height="208" key="GridCell.Tab.0.left" timestamp="1679017340172">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1679014031012" />
-    <state width="1493" height="208" key="GridCell.Tab.0.right" timestamp="1679014031012">
+    <state width="1493" height="208" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1679017340172" />
+    <state width="1493" height="208" key="GridCell.Tab.0.right" timestamp="1679017340172">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1679014031012" />
+    <state width="1493" height="208" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1679017340172" />
     <state x="299" y="63" key="Maven.ArtifactSearchDialog" timestamp="1679013541490">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
